@@ -40,3 +40,16 @@ body {
     font-size: 2em;
     color: DARKSLATEGRAY;
 }
+
+.footer {
+    font-family: "Courier New", serif;
+    margin-top: 25px;
+    font-size: 13px;
+    color: yellow;
+    background: black;
+    padding: 5px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
