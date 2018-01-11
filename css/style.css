@@ -161,6 +161,10 @@ body {
     margin: 5px;
 }
 
+.intro h1 {
+    letter-spacing: 1px;
+}
+
 .intro h2 {
     font-weight: 300;
 }
