@@ -1,0 +1,105 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Parth Sharma</title>
+		<link>https://parthsharma2.github.io/posts/</link>
+		<description>Recent content in Posts on Parth Sharma</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Sun, 02 Jun 2019 21:13:11 +0530</lastBuildDate>
+		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 1</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-one/</link>
+			<pubDate>Sun, 02 Jun 2019 21:13:11 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-one/</guid>
+			<description>27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&amp;rsquo;ll try and summarize some of the key points discussed with my mentor regarding my GSoC Project, the work done this week, pending work, if any, and work planned for the future.
+Meeting Summary Date: Tuesday, 28th May 2019 Summary:
+ Discussed the new Augur schema and architecture.</description>
+			<content type="html"><![CDATA[
+
+<p>27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&rsquo;ll try and summarize some of the key points discussed with my mentor regarding my <a href="https://summerofcode.withgoogle.com/projects/#5226166565208064">GSoC Project</a>, the work done this week, pending work, if any, and work planned for the future.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> Tuesday, 28th May 2019 <br />
+<strong>Summary:</strong></p>
+
+<ul>
+<li>Discussed the new Augur schema and architecture.
+
+<ul>
+<li>The new schema is almost ready.</li>
+<li>The Github API &amp; CII Badge Information workers are mostly ready and have begun gathering data.</li>
+<li>Augur will switch to a new API endpoint scheme.</li>
+</ul></li>
+<li>New metric implementations to be based on the new augur schema.</li>
+<li>Old metric implementations to remain for backwards compatibility.</li>
+<li>Begin work by implementing Evolution metrics, specifically <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md">Code Development metrics</a>.</li>
+</ul>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<p>This week I got access to the new augur schema. <a href="https://github.com/bing0n3">@bing0n3</a> and I began by implementing <a href="https://github.com/chaoss/wg-evolution#metrics">Evolution Metrics</a>. I focussed on implementing <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md">Code Development Metrics</a> while @bing0n3 focussed on <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/community_growth.md">Community Growth Metrics</a>.</p>
+
+<p><em>Metrics implemented:</em></p>
+
+<ul>
+<li><strong>Code Changes:</strong>
+
+<ul>
+<li>Returns a time series of code commits per period (i.e. day, week, month or year).</li>
+<li>Accepts a begin date and an end date.</li>
+</ul></li>
+<li><strong>Code Changes Lines:</strong>
+
+<ul>
+<li>Returns a time series of lines of code added and removed per period (i.e. day, week, month or year).</li>
+<li>Accepts a begin date and an end date.</li>
+</ul></li>
+<li><strong>Issues New:</strong>
+
+<ul>
+<li>Returns a time series of issues opened per period (i.e. day, week, month or year).</li>
+<li>Accepts a begin date and an end date.</li>
+</ul></li>
+<li><strong>Issues Closed:</strong>
+
+<ul>
+<li>Returns a time series of issues closed per period (i.e. day, week, month or year).</li>
+<li>Accepts a begin date and an end date.</li>
+</ul></li>
+<li><strong>Issue Backlog:</strong>
+
+<ul>
+<li>Returns number of issues currently open.</li>
+</ul></li>
+<li><strong>Issue Duration:</strong>
+
+<ul>
+<li>Returns the duration of each issue.</li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/284">chaoss/augur/pull/284</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/285">chaoss/augur/pull/285</a></li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Continue implementing the remaining Evolution metrics.</li>
+<li>Get involved with <a href="https://github.com/chaoss/wg-risk">Risk Working Group</a> to understand Risk metrics.</li>
+<li>Start adding API endpoints for the new metrics implemented, based on the new API endpoint scheme.</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 3rd June 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>
