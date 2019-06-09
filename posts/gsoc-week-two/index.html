@@ -8,32 +8,32 @@
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
 
-<meta itemprop="name" content="GSoC Week 1">
-<meta itemprop="description" content="27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&rsquo;ll try and summarize some of the key points discussed with my mentor regarding my GSoC Project, the work done this week, pending work, if any, and work planned for the future.
-Meeting Summary Date: Tuesday, 28th May 2019 Summary:
- Discussed the new Augur schema and architecture.">
+<meta itemprop="name" content="GSoC Week 2">
+<meta itemprop="description" content="This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.
+Meeting Summary Date: Monday, 3rd June 2019 Summary:
+ Refactor metric implementations to accept repo_group_id and repo_id instead of repo_url to adhere to the new API endpoint scheme. Add API endpoints for the metric implementations. Write documentation. Create unit tests for the metric implementations.">
 
 
-<meta itemprop="datePublished" content="2019-06-02T21:13:11&#43;05:30" />
-<meta itemprop="dateModified" content="2019-06-02T21:13:11&#43;05:30" />
-<meta itemprop="wordCount" content="348">
+<meta itemprop="datePublished" content="2019-06-09T21:34:58&#43;05:30" />
+<meta itemprop="dateModified" content="2019-06-09T21:34:58&#43;05:30" />
+<meta itemprop="wordCount" content="183">
 
 
 
 <meta itemprop="keywords" content="gsoc," />
-<meta property="og:title" content="GSoC Week 1" />
-<meta property="og:description" content="27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&rsquo;ll try and summarize some of the key points discussed with my mentor regarding my GSoC Project, the work done this week, pending work, if any, and work planned for the future.
-Meeting Summary Date: Tuesday, 28th May 2019 Summary:
- Discussed the new Augur schema and architecture." />
+<meta property="og:title" content="GSoC Week 2" />
+<meta property="og:description" content="This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.
+Meeting Summary Date: Monday, 3rd June 2019 Summary:
+ Refactor metric implementations to accept repo_group_id and repo_id instead of repo_url to adhere to the new API endpoint scheme. Add API endpoints for the metric implementations. Write documentation. Create unit tests for the metric implementations." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://parthsharma2.github.io/posts/gsoc-week-one/" />
-<meta property="article:published_time" content="2019-06-02T21:13:11&#43;05:30"/>
-<meta property="article:modified_time" content="2019-06-02T21:13:11&#43;05:30"/>
+<meta property="og:url" content="https://parthsharma2.github.io/posts/gsoc-week-two/" />
+<meta property="article:published_time" content="2019-06-09T21:34:58&#43;05:30"/>
+<meta property="article:modified_time" content="2019-06-09T21:34:58&#43;05:30"/>
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GSoC Week 1"/>
-<meta name="twitter:description" content="27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&rsquo;ll try and summarize some of the key points discussed with my mentor regarding my GSoC Project, the work done this week, pending work, if any, and work planned for the future.
-Meeting Summary Date: Tuesday, 28th May 2019 Summary:
- Discussed the new Augur schema and architecture."/>
+<meta name="twitter:title" content="GSoC Week 2"/>
+<meta name="twitter:description" content="This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.
+Meeting Summary Date: Monday, 3rd June 2019 Summary:
+ Refactor metric implementations to accept repo_group_id and repo_id instead of repo_url to adhere to the new API endpoint scheme. Add API endpoints for the metric implementations. Write documentation. Create unit tests for the metric implementations."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -42,7 +42,7 @@ Meeting Summary Date: Tuesday, 28th May 2019 Summary:
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
 	<link rel="shortcut icon" href="/favicon.ico">
 
-	<title>GSoC Week 1</title>
+	<title>GSoC Week 2</title>
 	<link rel="stylesheet" href="https://parthsharma2.github.io/css/style.min.31706917653d2b9e8410abd431f30ec4359a88a94fc87a63654779d87329edec.css" integrity="sha256-MXBpF2U9K56EEKvUMfMOxDWaiKlPyHpjZUd52HMp7ew=">
 	
 </head>
@@ -74,89 +74,47 @@ Meeting Summary Date: Tuesday, 28th May 2019 Summary:
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>Jun 2, 2019</span></div>
-				<h1>GSoC Week 1</h1>
+				<div class="post-meta"><span>Jun 9, 2019</span></div>
+				<h1>GSoC Week 2</h1>
 			</header>
 			<div class="content">
 				
 
-<p>27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&rsquo;ll try and summarize some of the key points discussed with my mentor regarding my <a href="https://summerofcode.withgoogle.com/projects/#5226166565208064">GSoC Project</a>, the work done this week, pending work, if any, and work planned for the future.</p>
+<p>This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.</p>
 
 <h2 id="meeting-summary">Meeting Summary<a href="#meeting-summary" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
-<p><strong>Date:</strong> Tuesday, 28th May 2019 <br />
-<strong>Summary:</strong></p>
+<p><strong>Date:</strong> Monday, 3rd June 2019 </p>
+
+<p><strong>Summary:</strong></p>
 
 <ul>
-<li>Discussed the new Augur schema and architecture.
-
-<ul>
-<li>The new schema is almost ready.</li>
-<li>The Github API &amp; CII Badge Information workers are mostly ready and have begun gathering data.</li>
-<li>Augur will switch to a new API endpoint scheme.</li>
-</ul></li>
-<li>New metric implementations to be based on the new augur schema.</li>
-<li>Old metric implementations to remain for backwards compatibility.</li>
-<li>Begin work by implementing Evolution metrics, specifically <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md">Code Development metrics</a>.</li>
+<li>Refactor metric implementations to accept <code>repo_group_id</code> and <code>repo_id</code> instead of <code>repo_url</code> to adhere to the new API endpoint scheme.</li>
+<li>Add API endpoints for the metric implementations.</li>
+<li>Write documentation.</li>
+<li>Create unit tests for the metric implementations.</li>
 </ul>
 
 <h2 id="work-done-this-week">Work Done This Week<a href="#work-done-this-week" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
-<p>This week I got access to the new augur schema. <a href="https://github.com/bing0n3">@bing0n3</a> and I began by implementing <a href="https://github.com/chaoss/wg-evolution#metrics">Evolution Metrics</a>. I focussed on implementing <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md">Code Development Metrics</a> while @bing0n3 focussed on <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/community_growth.md">Community Growth Metrics</a>.</p>
-
-<p><em>Metrics implemented:</em></p>
-
 <ul>
-<li><strong>Code Changes:</strong>
-
-<ul>
-<li>Returns a time series of code commits per period (i.e. day, week, month or year).</li>
-<li>Accepts a begin date and an end date.</li>
-</ul></li>
-<li><strong>Code Changes Lines:</strong>
-
-<ul>
-<li>Returns a time series of lines of code added and removed per period (i.e. day, week, month or year).</li>
-<li>Accepts a begin date and an end date.</li>
-</ul></li>
-<li><strong>Issues New:</strong>
-
-<ul>
-<li>Returns a time series of issues opened per period (i.e. day, week, month or year).</li>
-<li>Accepts a begin date and an end date.</li>
-</ul></li>
-<li><strong>Issues Closed:</strong>
-
-<ul>
-<li>Returns a time series of issues closed per period (i.e. day, week, month or year).</li>
-<li>Accepts a begin date and an end date.</li>
-</ul></li>
-<li><strong>Issue Backlog:</strong>
-
-<ul>
-<li>Returns number of issues currently open.</li>
-</ul></li>
-<li><strong>Issue Duration:</strong>
-
-<ul>
-<li>Returns the duration of each issue.</li>
-</ul></li>
+<li>All metrics implemented last week were refactored to work on repo groups as well as repos. Which means now you can use a metric on a specific repository using the <code>/repo-groups/:repo_group_id/repos/:repo_id/[metric]</code> endpoint, or on a group of repositories in one go using <code>/repo-groups/:repo_group_id/[metric]</code> endpoint.</li>
+<li>Created API endpoints for the refactored metric implementations.</li>
+<li>Wrote <a href="https://github.com/chaoss/augur/pull/291/commits/94c99097e2b1e6ed2c8f51f981c7e236a5304d1e">helper functions</a> that simplify creating API endpoints [This was fun. Learnt quite a bit about routing in Flask and the Python Data Model 😄].</li>
+<li>Documented the new API endpoints.</li>
 </ul>
 
 <h3 id="pull-requests">Pull Requests:<a href="#pull-requests" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 
 <ul>
-<li><a href="https://github.com/chaoss/augur/pull/284">chaoss/augur/pull/284</a></li>
-<li><a href="https://github.com/chaoss/augur/pull/285">chaoss/augur/pull/285</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/291">chaoss/augur/pull/291</a></li>
 </ul>
 
 <h2 id="future-work">Future Work<a href="#future-work" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
 <ul>
-<li>Continue implementing the remaining Evolution metrics.</li>
-<li>Get involved with <a href="https://github.com/chaoss/wg-risk">Risk Working Group</a> to understand Risk metrics.</li>
-<li>Start adding API endpoints for the new metrics implemented, based on the new API endpoint scheme.</li>
-<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 3rd June 2019</strong>.</li>
+<li>Write unit tests.</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 10th June 2019</strong>.</li>
 </ul>
 
 			</div>
@@ -165,13 +123,13 @@ Meeting Summary Date: Tuesday, 28th May 2019 Summary:
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://parthsharma2.github.io/tags/gsoc">gsoc</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>348 Words</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-06-02 21:13 &#43;0530</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>183 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-06-09 21:34 &#43;0530</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://parthsharma2.github.io/posts/gsoc-week-two/">
-				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>GSoC Week 2</span>
+			<a class="prev-post" href="https://parthsharma2.github.io/posts/gsoc-week-one/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>GSoC Week 1</span>
 			</a>
 		</div>
 		<div id="comments" class="thin">
