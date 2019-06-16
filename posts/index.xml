@@ -6,8 +6,62 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 09 Jun 2019 21:34:58 +0530</lastBuildDate>
+		<lastBuildDate>Sun, 16 Jun 2019 23:05:31 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 3</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-three/</link>
+			<pubDate>Sun, 16 Jun 2019 23:05:31 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-three/</guid>
+			<description>This week involved quite a bit of writing unit tests &amp;amp; documentation. It also involved reading and understanding a lot of Javascript for a better understanding of Augur&amp;rsquo;s frontend.
+Meeting Summary Date: Monday, 10th June 2019  Develop unit tests for metric implementations &amp;amp; API endpoints. Write documentation for &amp;lsquo;Create a metric&amp;rsquo;. Start looking at developing the frontend for the metric implementations. Make changes to the frontend to be able to work with Augur&amp;rsquo;s new architecture &amp;amp; API endpoint scheme.</description>
+			<content type="html"><![CDATA[
+
+<p>This week involved quite a bit of writing unit tests &amp; documentation. It also involved reading and understanding a lot of Javascript for a better understanding of Augur&rsquo;s frontend.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> Monday, 10th June 2019 </p>
+
+<ul>
+<li>Develop unit tests for metric implementations &amp; API endpoints.</li>
+<li>Write documentation for &lsquo;Create a metric&rsquo;.</li>
+<li>Start looking at developing the frontend for the metric implementations.</li>
+<li>Make changes to the frontend to be able to work with Augur&rsquo;s new architecture &amp; API endpoint scheme.</li>
+</ul>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<ul>
+<li>Developed unit tests for the various metric implementations.</li>
+<li>Developed unit tests for the API endpoints.</li>
+<li>Updated &lsquo;Create a Metric&rsquo; documentation by adding steps explaining how to implement a metric in the backend.</li>
+<li>Explored Augur&rsquo;s frontend architecture.</li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/296">chaoss/augur/pull/296</a></li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<ul>
+<li>Exploring Augur&rsquo;s frontend was quite a challenge this week due to my lack of experience in Javascript &amp; Vue.js. With help from everyone working on Augur, I was able to get a nice high-level overview of how the frontend works. I&rsquo;m still working on getting a better understanding of Augur&rsquo;s frontend &amp; trying to get the metric implementations on to the frontend.</li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Get a better understanding of Augur&rsquo;s frontend.</li>
+<li>Start developing the frontend for the metric implementations.</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 17th June 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 2</title>

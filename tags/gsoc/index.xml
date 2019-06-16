@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 09 Jun 2019 21:34:58 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jun 2019 23:05:31 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 3</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-three/</link>
+      <pubDate>Sun, 16 Jun 2019 23:05:31 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-three/</guid>
+      <description>This week involved quite a bit of writing unit tests &amp;amp; documentation. It also involved reading and understanding a lot of Javascript for a better understanding of Augur&amp;rsquo;s frontend.
+Meeting Summary Date: Monday, 10th June 2019  Develop unit tests for metric implementations &amp;amp; API endpoints. Write documentation for &amp;lsquo;Create a metric&amp;rsquo;. Start looking at developing the frontend for the metric implementations. Make changes to the frontend to be able to work with Augur&amp;rsquo;s new architecture &amp;amp; API endpoint scheme.</description>
+    </item>
     
     <item>
       <title>GSoC Week 2</title>
