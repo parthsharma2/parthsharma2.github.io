@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 16 Jun 2019 23:05:31 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 23:39:49 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 4</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-four/</link>
+      <pubDate>Sun, 23 Jun 2019 23:39:49 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-four/</guid>
+      <description>This week I implemented evolution &amp;amp; risk metrics.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week The following metrics were implemented:
+ Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.  Risk  CII Best Practices Badge: returns the CII Best Practices Badge level.</description>
+    </item>
     
     <item>
       <title>GSoC Week 3</title>

@@ -6,8 +6,69 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 16 Jun 2019 23:05:31 +0530</lastBuildDate>
+		<lastBuildDate>Sun, 23 Jun 2019 23:39:49 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 4</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-four/</link>
+			<pubDate>Sun, 23 Jun 2019 23:39:49 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-four/</guid>
+			<description>This week I implemented evolution &amp;amp; risk metrics.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week The following metrics were implemented:
+ Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.  Risk  CII Best Practices Badge: returns the CII Best Practices Badge level.</description>
+			<content type="html"><![CDATA[
+
+<p>This week I implemented evolution &amp; risk metrics.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> NA</p>
+
+<p>No meeting was held this week.</p>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<p>The following metrics were implemented:</p>
+
+<ul>
+<li><strong>Evolution</strong>
+
+<ul>
+<li><em>Issue Duration:</em> returns the duration of all closed issues.</li>
+<li><em>Issues Active:</em> returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.</li>
+</ul></li>
+<li><strong>Risk</strong>
+
+<ul>
+<li><em>CII Best Practices Badge:</em> returns the CII Best Practices Badge level.</li>
+<li><em>Languages:</em> returns the primary language of the repository. In this implementation, the primary language is fetched from the GitHub API.</li>
+<li><em>License Declared:</em> returns the declared license of the repository. In this implementation, the licenses are fetched from the badging data (CII Best Practices badge)</li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/300">Implement Evolution &amp; Risk Metrics</a></li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<p>There weren&rsquo;t many challenges this week. It mostly involved exploring the Unified Augur Database &amp; figuring out all the possible ways of implementing the various metrics.</p>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Focus on implementing issue related metrics.</li>
+<li>Look at creating visualizations for the implemented metrics.</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 24th June 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 3</title>
