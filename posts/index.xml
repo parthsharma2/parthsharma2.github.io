@@ -6,8 +6,117 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 23 Jun 2019 23:39:49 +0530</lastBuildDate>
+		<lastBuildDate>Mon, 01 Jul 2019 00:32:36 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 5</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-five/</link>
+			<pubDate>Mon, 01 Jul 2019 00:32:36 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-five/</guid>
+			<description>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&amp;rsquo;s new UI (which is pretty cool) was merged into the dev branch (it&amp;rsquo;s not fully functional yet, but it&amp;rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the stable-demo branch.
+Meeting Summary Date: Tuesday, 25th June 2019 &amp;amp; Friday, 28th June 2019</description>
+			<content type="html"><![CDATA[
+
+<p>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&rsquo;s new UI (which is pretty cool) was merged into the <code>dev</code> branch (it&rsquo;s not fully functional yet, but it&rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the <code>stable-demo</code> branch.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> Tuesday, 25th June 2019 &amp; Friday, 28th June 2019</p>
+
+<ul>
+<li>Start work on adding Pull Requests to Augur Unified Database.</li>
+<li>Update the local installation instructions for Augur.</li>
+<li>Get all the API &amp; unit tests completed.</li>
+<li>Update API documentation:
+
+<ul>
+<li>Move all GHTorrent API endpoints to Legacy.</li>
+<li>Remove the Facade API endpoints from the docs.</li>
+<li>Improve the Augur DB API documentation.</li>
+</ul></li>
+</ul>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<ul>
+<li><strong>Metrics Implemented:</strong>
+
+<ul>
+<li><em>Issue Participants:</em> returns the number of people participating in issue discussion.</li>
+<li><em>Issue Throughput:</em> returns a ratio of number of issues closed to total issues.</li>
+</ul></li>
+<li><strong>Metrics Refactored:</strong>
+
+<ul>
+<li>Refactored certain time series metrics to include a &lsquo;date&rsquo; field (previously, some time series metrics returned date fields labelled as &lsquo;commit_date&rsquo;, &lsquo;issue_date&rsquo;, etc.).</li>
+</ul></li>
+<li><strong>API Documentation:</strong>
+
+<ul>
+<li>Moved all GHTorrent endpoints to the GHTorrent Legacy section.</li>
+<li>Moved all GitHub API endpoints to the GitHub API endpoint section.</li>
+<li>Removed all Facade endpoints from the documentation.</li>
+<li>Updated the Augur DB endpoint documentation:
+
+<ul>
+<li>Added a single line description of each implemented metric.</li>
+<li>Documented certain undocumented endpoints.</li>
+<li>Improved the parameter descriptions.</li>
+</ul></li>
+</ul></li>
+<li><strong>Testing:</strong>
+
+<ul>
+<li>Updated the Augur DB based metric implementation unit tests &amp; the API endpoint tests.</li>
+<li>Added unit tests &amp; API endpoint tests for new metric implementations.</li>
+</ul></li>
+<li><strong>Misc:</strong>
+
+<ul>
+<li>Helped setting up the <code>stable-demo</code> branch.</li>
+<li>Getting all new metric implementations, documentation updates, etc. without the new UI to the <code>stable-demo</code> branch.</li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/305">Metric implementations &amp; API docs update</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/309">stable-demo: added metrics &amp; api-docs from dev</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/310">Dev: Remove Facade Legacy endpoints from api-docs</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/312">stable demo: Added &amp; updated augur_db tests &amp; refactor metric implementations</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/313">dev: Added &amp; updated augur_db tests &amp; refactor metric implementations</a></li>
+</ul>
+
+<h2 id="work-in-progress">Work in Progress:</h2>
+
+<ul>
+<li>Adding Pull Requests to the Augur Unified Database:
+
+<ul>
+<li>Defining tables.</li>
+<li>Creating a worker for fetching Pull Request data.</li>
+</ul></li>
+<li>Installation Instructions for Augur [Almost ready]</li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<ul>
+<li>Implementing the <em>issue throughput</em> metric was a bit of challenge. I wanted to calculate the issue throughput of different repositories in repo groups on the database side itself. This required messing around with sub queries &amp; grouping them together in SQL. After quite a bit of googling &amp; searching for answers on StackOverflow I was able to implement the <em>issue throughput</em> metric.</li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Adding Pull Requests to the Augur Unified Database.</li>
+<li>Installation Instructions for Augur.</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 1st July 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 4</title>

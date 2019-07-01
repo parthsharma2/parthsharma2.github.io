@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 23 Jun 2019 23:39:49 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:32:36 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 5</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-five/</link>
+      <pubDate>Mon, 01 Jul 2019 00:32:36 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-five/</guid>
+      <description>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&amp;rsquo;s new UI (which is pretty cool) was merged into the dev branch (it&amp;rsquo;s not fully functional yet, but it&amp;rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the stable-demo branch.
+Meeting Summary Date: Tuesday, 25th June 2019 &amp;amp; Friday, 28th June 2019</description>
+    </item>
     
     <item>
       <title>GSoC Week 4</title>
