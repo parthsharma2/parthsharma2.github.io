@@ -6,8 +6,94 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 01 Jul 2019 00:32:36 +0530</lastBuildDate>
+		<lastBuildDate>Sun, 07 Jul 2019 19:41:46 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 6</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-six/</link>
+			<pubDate>Sun, 07 Jul 2019 19:41:46 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-six/</guid>
+			<description>This week, I created a worker that fetches a repository&amp;rsquo;s information (forks, stargazers, watchers, etc.) and implemented a few metrics based on the repository&amp;rsquo;s information.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  Metrics Implemented:
+ Forks: Returns a time series of fork count. Fork Count: Returns the latest fork count. Stars: Returns a time series of stargazers count. Stars Count: Returns the latest stargazers count.</description>
+			<content type="html"><![CDATA[
+
+<p>This week, I created a worker that fetches a repository&rsquo;s information (forks, stargazers, watchers, etc.) and implemented a few metrics based on the repository&rsquo;s information.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> NA</p>
+
+<p>No meeting was held this week.</p>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<ul>
+<li><p><strong>Metrics Implemented:</strong></p>
+
+<ul>
+<li><em>Forks:</em> Returns a time series of fork count.</li>
+<li><em>Fork Count:</em> Returns the latest fork count.</li>
+<li><em>Stars:</em> Returns a time series of stargazers count.</li>
+<li><em>Stars Count:</em> Returns the latest stargazers count.</li>
+<li><em>Watchers:</em> Returns a time series of watchers count.</li>
+<li><em>Watchers Count:</em> Returns the latest watchers count.</li>
+</ul></li>
+
+<li><p><strong>Metrics Refactored:</strong></p>
+
+<ul>
+<li>Along with <a href="https://github.com/gabe-heim">@gabe-heim</a> &amp; <a href="https://github.com/bing0n3">@bing0n3</a> refactored all metric API endpoints to include a <code>repo-name</code> field.</li>
+</ul></li>
+
+<li><p><strong>API Endpoints Added:</strong>
+Added the following two utility API endpoints:</p>
+
+<ul>
+<li><code>/dosocs/repos</code>: Get a list of repos along with their <code>repo_id</code> &amp; <code>path</code>. Created to allow dosocs to get the path of the various repositories in Augur &amp; analyze them.</li>
+<li><code>/repo-groups/:repo_group_id/repos</code>: Get a list of all repos in a repo group specified by <code>repo_group_id</code>.</li>
+</ul></li>
+
+<li><p><strong>GitHub Repo Info Worker:</strong></p>
+
+<ul>
+<li>Created a worker that fetches repo info (forks, stars, watchers, license, etc) for all repositories stored in the Augur.</li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/314">Add utility api endpoints</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/315">refactor metric implementations to include repo_name</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/316">Add GitHub Repo Info Worker</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/320">Bug fixes in Repo Info Worker &amp; Metric implementations</a></li>
+</ul>
+
+<h2 id="work-in-progress">Work in Progress:</h2>
+
+<ul>
+<li>Integrating the GitHub Repo Info Worker into Augur&rsquo;s worker architecture.</li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<ul>
+<li>Understanding how the worker works in Augur&rsquo;s architecture was a bit of challenge this week. The current challenge is integrating this worker into Augur.</li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Integrate the GitHub Repo Info Worker into Augur</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 8th July 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 5</title>

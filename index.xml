@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 01 Jul 2019 00:32:36 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jul 2019 19:41:46 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 6</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-six/</link>
+      <pubDate>Sun, 07 Jul 2019 19:41:46 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-six/</guid>
+      <description>This week, I created a worker that fetches a repository&amp;rsquo;s information (forks, stargazers, watchers, etc.) and implemented a few metrics based on the repository&amp;rsquo;s information.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  Metrics Implemented:
+ Forks: Returns a time series of fork count. Fork Count: Returns the latest fork count. Stars: Returns a time series of stargazers count. Stars Count: Returns the latest stargazers count.</description>
+    </item>
     
     <item>
       <title>GSoC Week 5</title>
