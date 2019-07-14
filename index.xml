@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 07 Jul 2019 19:41:46 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 22:59:38 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 7</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-seven/</link>
+      <pubDate>Sun, 14 Jul 2019 22:59:38 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-seven/</guid>
+      <description>This week, I spent most of the time studying Augur&amp;rsquo;s worker architecture (broker &amp;amp; housekeeper) and refactoring the github repository metadata worker to integrate into Augur&amp;rsquo;s architecture.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker.</description>
+    </item>
     
     <item>
       <title>GSoC Week 6</title>

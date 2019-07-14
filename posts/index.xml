@@ -6,8 +6,63 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 07 Jul 2019 19:41:46 +0530</lastBuildDate>
+		<lastBuildDate>Sun, 14 Jul 2019 22:59:38 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 7</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-seven/</link>
+			<pubDate>Sun, 14 Jul 2019 22:59:38 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-seven/</guid>
+			<description>This week, I spent most of the time studying Augur&amp;rsquo;s worker architecture (broker &amp;amp; housekeeper) and refactoring the github repository metadata worker to integrate into Augur&amp;rsquo;s architecture.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker.</description>
+			<content type="html"><![CDATA[
+
+<p>This week, I spent most of the time studying Augur&rsquo;s worker architecture (broker &amp; housekeeper)
+and refactoring the github repository metadata worker to integrate into Augur&rsquo;s architecture.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> NA</p>
+
+<p>No meeting was held this week.</p>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<ul>
+<li><strong>GitHub Repository Metadata Worker:</strong>
+
+<ul>
+<li>Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker.</li>
+<li>Refactored the worker to work on scheduled tasks, i.e. allow housekeeper to schedule tasks for this worker. This allow you to schedule the worker to run periodically.</li>
+<li>The worker is now fully functional and ready to be used.</li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/323">Make gh_repo_info_worker compatible with broker</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/324">Fix gh_repo_info_worker</a></li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<ul>
+<li>As you can see not a lot work was done this week as most of the time was spent studying how worker&rsquo;s work in Augur. I spent quite a bit of time understanding the Broker and Housekeeper, how tasks are scheduled and how workers accept tasks from the Broker and process them.</li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Begin work on the Pull Request Worker.</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 15th July 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 6</title>
