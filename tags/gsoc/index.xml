@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 14 Jul 2019 22:59:38 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2019 09:16:34 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 8</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-eight/</link>
+      <pubDate>Mon, 22 Jul 2019 09:16:34 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-eight/</guid>
+      <description>This week I mostly worked on Workers and also implemented some metrics.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  Metrics Implemented:
+ Average Issue Resolution Time: returns the average time taken to resolve an issue (i.e. close an issue) Top Committers: returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this issue)  GitHub Repository Metadata Worker:</description>
+    </item>
     
     <item>
       <title>GSoC Week 7</title>

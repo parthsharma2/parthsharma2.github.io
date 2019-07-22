@@ -6,8 +6,82 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 14 Jul 2019 22:59:38 +0530</lastBuildDate>
+		<lastBuildDate>Mon, 22 Jul 2019 09:16:34 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 8</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-eight/</link>
+			<pubDate>Mon, 22 Jul 2019 09:16:34 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-eight/</guid>
+			<description>This week I mostly worked on Workers and also implemented some metrics.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  Metrics Implemented:
+ Average Issue Resolution Time: returns the average time taken to resolve an issue (i.e. close an issue) Top Committers: returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this issue)  GitHub Repository Metadata Worker:</description>
+			<content type="html"><![CDATA[
+
+<p>This week I mostly worked on Workers and also implemented some metrics.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> NA</p>
+
+<p>No meeting was held this week.</p>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<ul>
+<li><p><strong>Metrics Implemented:</strong></p>
+
+<ul>
+<li><em>Average Issue Resolution Time:</em> returns the average time taken to resolve an issue (i.e. close an issue)</li>
+<li><em>Top Committers:</em> returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this <a href="https://github.com/chaoss/augur/issues/327">issue</a>)</li>
+</ul></li>
+
+<li><p><strong>GitHub Repository Metadata Worker:</strong></p>
+
+<ul>
+<li>Added a <code>setup.py</code> that simplifies installing and running the worker.</li>
+</ul></li>
+
+<li><p><strong>GitHub Pull Requests Worker:</strong></p>
+
+<ul>
+<li>Developed the first version of the GitHub Pull Request worker.</li>
+<li>This version of the worker fetches pull request data from the GitHub API and populates the <code>pull_requests</code> table.</li>
+</ul></li>
+
+<li><p><strong>API Docs:</strong></p>
+
+<ul>
+<li>Moved all legacy API endpoint documentation to the bottom.</li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/326">Add setup.py to gh_repo_info_worker &amp; API Docs update</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/328">Add Pull Request Worker</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/330">Implement Metrics</a></li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<ul>
+<li>There weren&rsquo;t many challenges this week. But as I continue working on the Pull Request worker, I&rsquo;m pretty sure that I&rsquo;ll soon encounter some challenges.</li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Continue working on the Pull Request Worker.</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 22nd July 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 7</title>
