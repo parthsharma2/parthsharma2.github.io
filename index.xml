@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 22 Jul 2019 09:16:34 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2019 09:50:05 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 9</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-nine/</link>
+      <pubDate>Mon, 29 Jul 2019 09:50:05 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-nine/</guid>
+      <description>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker
+Meeting Summary Date: Monday, 22nd July 2019
+ @sgoggins cleared a few doubts I had regarding the Pull Request Worker Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on repo-groups/ creates a Repo-Group &amp;amp; a POST request on repos/ adds a repository and begins the data collection process.</description>
+    </item>
     
     <item>
       <title>GSoC Week 8</title>

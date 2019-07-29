@@ -6,8 +6,79 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 22 Jul 2019 09:16:34 +0530</lastBuildDate>
+		<lastBuildDate>Mon, 29 Jul 2019 09:50:05 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 9</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-nine/</link>
+			<pubDate>Mon, 29 Jul 2019 09:50:05 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-nine/</guid>
+			<description>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker
+Meeting Summary Date: Monday, 22nd July 2019
+ @sgoggins cleared a few doubts I had regarding the Pull Request Worker Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on repo-groups/ creates a Repo-Group &amp;amp; a POST request on repos/ adds a repository and begins the data collection process.</description>
+			<content type="html"><![CDATA[
+
+<p>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> Monday, 22nd July 2019</p>
+
+<ul>
+<li><a href="https://github.com/sgoggins">@sgoggins</a> cleared a few doubts I had regarding the Pull Request Worker</li>
+<li>Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on <code>repo-groups/</code> creates a Repo-Group &amp; a POST request on <code>repos/</code> adds a repository and begins the data collection process.</li>
+</ul>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<ul>
+<li><p><strong>Metrics Implemented:</strong></p>
+
+<ul>
+<li><em>Reviews:</em> Time series of the number of new reviews or pull requests opened within a certain period.</li>
+<li><em>Reviews Accepted:</em> Time series of the number of accepted reviews or pull requests merged within a certain period.</li>
+<li><em>Reviews Declined:</em> Time series of the number of declined reviews or pull requests closed within a certain period.</li>
+<li><em>Review Duration:</em> Time since a Review or Pull Request is proposed until it is accepted.</li>
+</ul></li>
+
+<li><p><strong>GitHub Pull Requests Worker:</strong> <br />
+The Pull Request Worker now also gathers the following pull request data:</p>
+
+<ul>
+<li>Labels</li>
+<li>Events</li>
+<li>Reviewers</li>
+<li>Assignees</li>
+<li>Comments</li>
+<li>PR Metadata (such as Head &amp; Base details)</li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/333">Update PR worker</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/334">PR metric implementations &amp; PR worker bug fixes</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/336">Update Pull Request Worker</a></li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<ul>
+<li>The main challenge for this week was debugging the Pull Request Worker. It required quite a bit of testing. The debugging process isn&rsquo;t over yet. I plan to continue debugging the worker while working on implementing pull request related metrics.</li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Continue working on the Pull Request Worker.</li>
+<li>Implement Pull Request related metrics</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 29th July 2019</strong>.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 8</title>

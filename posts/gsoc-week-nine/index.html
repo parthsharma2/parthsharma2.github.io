@@ -7,38 +7,32 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
-<meta itemprop="name" content="GSoC Week 4">
-<meta itemprop="description" content="This week I implemented evolution &amp; risk metrics.
-Meeting Summary Date: NA
-No meeting was held this week.
-Work Done This Week The following metrics were implemented:
- Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.  Risk  CII Best Practices Badge: returns the CII Best Practices Badge level.">
+<meta itemprop="name" content="GSoC Week 9">
+<meta itemprop="description" content="This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker
+Meeting Summary Date: Monday, 22nd July 2019
+ @sgoggins cleared a few doubts I had regarding the Pull Request Worker Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on repo-groups/ creates a Repo-Group &amp; a POST request on repos/ adds a repository and begins the data collection process.">
 
 
-<meta itemprop="datePublished" content="2019-06-23T23:39:49&#43;05:30" />
-<meta itemprop="dateModified" content="2019-06-23T23:39:49&#43;05:30" />
-<meta itemprop="wordCount" content="192">
+<meta itemprop="datePublished" content="2019-07-29T09:50:05&#43;05:30" />
+<meta itemprop="dateModified" content="2019-07-29T09:50:05&#43;05:30" />
+<meta itemprop="wordCount" content="278">
 
 
 
 <meta itemprop="keywords" content="gsoc," />
-<meta property="og:title" content="GSoC Week 4" />
-<meta property="og:description" content="This week I implemented evolution &amp; risk metrics.
-Meeting Summary Date: NA
-No meeting was held this week.
-Work Done This Week The following metrics were implemented:
- Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.  Risk  CII Best Practices Badge: returns the CII Best Practices Badge level." />
+<meta property="og:title" content="GSoC Week 9" />
+<meta property="og:description" content="This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker
+Meeting Summary Date: Monday, 22nd July 2019
+ @sgoggins cleared a few doubts I had regarding the Pull Request Worker Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on repo-groups/ creates a Repo-Group &amp; a POST request on repos/ adds a repository and begins the data collection process." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://parthsharma2.github.io/posts/gsoc-week-four/" />
-<meta property="article:published_time" content="2019-06-23T23:39:49+05:30" />
-<meta property="article:modified_time" content="2019-06-23T23:39:49+05:30" />
+<meta property="og:url" content="https://parthsharma2.github.io/posts/gsoc-week-nine/" />
+<meta property="article:published_time" content="2019-07-29T09:50:05+05:30" />
+<meta property="article:modified_time" content="2019-07-29T09:50:05+05:30" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GSoC Week 4"/>
-<meta name="twitter:description" content="This week I implemented evolution &amp; risk metrics.
-Meeting Summary Date: NA
-No meeting was held this week.
-Work Done This Week The following metrics were implemented:
- Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.  Risk  CII Best Practices Badge: returns the CII Best Practices Badge level."/>
+<meta name="twitter:title" content="GSoC Week 9"/>
+<meta name="twitter:description" content="This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker
+Meeting Summary Date: Monday, 22nd July 2019
+ @sgoggins cleared a few doubts I had regarding the Pull Request Worker Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on repo-groups/ creates a Repo-Group &amp; a POST request on repos/ adds a repository and begins the data collection process."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -47,7 +41,7 @@ Work Done This Week The following metrics were implemented:
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
 	<link rel="shortcut icon" href="/favicon.ico">
 
-	<title>GSoC Week 4</title>
+	<title>GSoC Week 9</title>
 	<link rel="stylesheet" href="https://parthsharma2.github.io/css/style.min.31706917653d2b9e8410abd431f30ec4359a88a94fc87a63654779d87329edec.css" integrity="sha256-MXBpF2U9K56EEKvUMfMOxDWaiKlPyHpjZUd52HMp7ew=">
 	
 </head>
@@ -79,56 +73,68 @@ Work Done This Week The following metrics were implemented:
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>Jun 23, 2019</span></div>
-				<h1>GSoC Week 4</h1>
+				<div class="post-meta"><span>Jul 29, 2019</span></div>
+				<h1>GSoC Week 9</h1>
 			</header>
 			<div class="content">
 				
 
-<p>This week I implemented evolution &amp; risk metrics.</p>
+<p>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker</p>
 
 <h2 id="meeting-summary">Meeting Summary<a href="#meeting-summary" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
-<p><strong>Date:</strong> NA</p>
+<p><strong>Date:</strong> Monday, 22nd July 2019</p>
 
-<p>No meeting was held this week.</p>
+<ul>
+<li><a href="https://github.com/sgoggins">@sgoggins</a> cleared a few doubts I had regarding the Pull Request Worker</li>
+<li>Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on <code>repo-groups/</code> creates a Repo-Group &amp; a POST request on <code>repos/</code> adds a repository and begins the data collection process.</li>
+</ul>
 
 <h2 id="work-done-this-week">Work Done This Week<a href="#work-done-this-week" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
-<p>The following metrics were implemented:</p>
+<ul>
+<li><p><strong>Metrics Implemented:</strong></p>
 
 <ul>
-<li><strong>Evolution</strong>
-
-<ul>
-<li><em>Issue Duration:</em> returns the duration of all closed issues.</li>
-<li><em>Issues Active:</em> returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.</li>
+<li><em>Reviews:</em> Time series of the number of new reviews or pull requests opened within a certain period.</li>
+<li><em>Reviews Accepted:</em> Time series of the number of accepted reviews or pull requests merged within a certain period.</li>
+<li><em>Reviews Declined:</em> Time series of the number of declined reviews or pull requests closed within a certain period.</li>
+<li><em>Review Duration:</em> Time since a Review or Pull Request is proposed until it is accepted.</li>
 </ul></li>
-<li><strong>Risk</strong>
+
+<li><p><strong>GitHub Pull Requests Worker:</strong> <br />
+The Pull Request Worker now also gathers the following pull request data:</p>
 
 <ul>
-<li><em>CII Best Practices Badge:</em> returns the CII Best Practices Badge level.</li>
-<li><em>Languages:</em> returns the primary language of the repository. In this implementation, the primary language is fetched from the GitHub API.</li>
-<li><em>License Declared:</em> returns the declared license of the repository. In this implementation, the licenses are fetched from the badging data (CII Best Practices badge)</li>
+<li>Labels</li>
+<li>Events</li>
+<li>Reviewers</li>
+<li>Assignees</li>
+<li>Comments</li>
+<li>PR Metadata (such as Head &amp; Base details)</li>
 </ul></li>
 </ul>
 
 <h3 id="pull-requests">Pull Requests:<a href="#pull-requests" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 
 <ul>
-<li><a href="https://github.com/chaoss/augur/pull/300">Implement Evolution &amp; Risk Metrics</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/333">Update PR worker</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/334">PR metric implementations &amp; PR worker bug fixes</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/336">Update Pull Request Worker</a></li>
 </ul>
 
 <h2 id="challenges-encountered">Challenges Encountered<a href="#challenges-encountered" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
-<p>There weren&rsquo;t many challenges this week. It mostly involved exploring the Unified Augur Database &amp; figuring out all the possible ways of implementing the various metrics.</p>
+<ul>
+<li>The main challenge for this week was debugging the Pull Request Worker. It required quite a bit of testing. The debugging process isn&rsquo;t over yet. I plan to continue debugging the worker while working on implementing pull request related metrics.</li>
+</ul>
 
 <h2 id="future-work">Future Work<a href="#future-work" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 
 <ul>
-<li>Focus on implementing issue related metrics.</li>
-<li>Look at creating visualizations for the implemented metrics.</li>
-<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 24th June 2019</strong>.</li>
+<li>Continue working on the Pull Request Worker.</li>
+<li>Implement Pull Request related metrics</li>
+<li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 29th July 2019</strong>.</li>
 </ul>
 
 			</div>
@@ -137,16 +143,13 @@ Work Done This Week The following metrics were implemented:
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://parthsharma2.github.io/tags/gsoc">gsoc</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>192 Words</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-06-23 23:39 &#43;0530</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>278 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-07-29 09:50 &#43;0530</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://parthsharma2.github.io/posts/gsoc-week-five/">
-				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>GSoC Week 5</span>
-			</a>
-			<a class="prev-post" href="https://parthsharma2.github.io/posts/gsoc-week-three/">
-				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>GSoC Week 3</span>
+			<a class="prev-post" href="https://parthsharma2.github.io/posts/gsoc-week-eight/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>GSoC Week 8</span>
 			</a>
 		</div>
 		<div id="comments" class="thin">
