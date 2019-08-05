@@ -6,8 +6,75 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 29 Jul 2019 09:50:05 +0530</lastBuildDate>
+		<lastBuildDate>Mon, 05 Aug 2019 23:08:23 +0530</lastBuildDate>
 		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>GSoC Week 10</title>
+			<link>https://parthsharma2.github.io/posts/gsoc-week-ten/</link>
+			<pubDate>Mon, 05 Aug 2019 23:08:23 +0530</pubDate>
+			
+			<guid>https://parthsharma2.github.io/posts/gsoc-week-ten/</guid>
+			<description>This week, I spent most of my time debugging the Pull Request worker.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  GitHub Repository Metadata Worker:
+ Improved logging. The log file now includes the worker&amp;rsquo;s name and also logs exception tracebacks that help in debugging. Error Handling. The worker doesn&amp;rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</description>
+			<content type="html"><![CDATA[
+
+<p>This week, I spent most of my time debugging the Pull Request worker.</p>
+
+<h2 id="meeting-summary">Meeting Summary</h2>
+
+<p><strong>Date:</strong> NA</p>
+
+<p>No meeting was held this week.</p>
+
+<h2 id="work-done-this-week">Work Done This Week</h2>
+
+<ul>
+<li><p><strong>GitHub Repository Metadata Worker:</strong></p>
+
+<ul>
+<li>Improved logging. The log file now includes the worker&rsquo;s name and also logs exception tracebacks that help in debugging.</li>
+<li>Error Handling. The worker doesn&rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</li>
+<li>Added the ability to set the port the worker runs on by adding an entry for it <code>augur.config.json</code></li>
+</ul></li>
+
+<li><p><strong>GitHub Pull Requests Worker:</strong></p>
+
+<ul>
+<li>Fixed a bug that caused the worker to raise an error when a PR with a milestone was encountered.</li>
+<li>Fixed a bug that caused a Unique Key Violation in the DB when inserting Pull Request comments.</li>
+<li>Improved logging. The log file now includes the worker&rsquo;s name and also logs exception tracebacks that help in debugging.</li>
+<li>Error Handling. The worker doesn&rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</li>
+<li>Added the ability to set the port the worker runs on by adding an entry for it <code>augur.config.json</code></li>
+</ul></li>
+</ul>
+
+<h3 id="pull-requests">Pull Requests:</h3>
+
+<ul>
+<li><a href="https://github.com/chaoss/augur/pull/337">Fixes &amp; minor changes to Repo Info Worker &amp; PR Worker</a></li>
+<li><a href="https://github.com/chaoss/augur/pull/339">Bug fixes PR worker</a></li>
+</ul>
+
+<h2 id="challenges-encountered">Challenges Encountered</h2>
+
+<p>Fixing the bug that caused a &lsquo;Unique Key Violation&rsquo; in the DB when inserting Pull Request comments was the most challenging task. I spent hours going through the PR worker&rsquo;s code and testing it on various repositories just to realize that the error wasn&rsquo;t in the code but the database.</p>
+
+<p>The previous version of the PR worker used to manually set the primary key of each record inserted in the DB. This messed up the DB&rsquo;s primary key counter. The latest version of the PR worker relies on the DB to autoincrement the primary key each time a new record is inserted. So, each time the PR worker tries to insert a comment, the autoincremented primary key already exists in the DB thus resulting in a &lsquo;Unique Key Violation&rsquo; error.</p>
+
+<p>The fix was pretty simple. All we needed to do was to set the DB&rsquo;s primary key counter for the comments table to the max primary key in the comments table.</p>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Continue working on the Pull Request Worker.</li>
+<li>Implement Pull Request related metrics.</li>
+</ul>
+]]></content>
+		</item>
 		
 		<item>
 			<title>GSoC Week 9</title>

@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 29 Jul 2019 09:50:05 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 23:08:23 +0530</lastBuildDate>
     
 	<atom:link href="https://parthsharma2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GSoC Week 10</title>
+      <link>https://parthsharma2.github.io/posts/gsoc-week-ten/</link>
+      <pubDate>Mon, 05 Aug 2019 23:08:23 +0530</pubDate>
+      
+      <guid>https://parthsharma2.github.io/posts/gsoc-week-ten/</guid>
+      <description>This week, I spent most of my time debugging the Pull Request worker.
+Meeting Summary Date: NA
+No meeting was held this week.
+Work Done This Week  GitHub Repository Metadata Worker:
+ Improved logging. The log file now includes the worker&amp;rsquo;s name and also logs exception tracebacks that help in debugging. Error Handling. The worker doesn&amp;rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</description>
+    </item>
     
     <item>
       <title>GSoC Week 9</title>
