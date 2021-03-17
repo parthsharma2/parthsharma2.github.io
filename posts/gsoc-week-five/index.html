@@ -10,10 +10,8 @@
 <meta itemprop="name" content="GSoC Week 5">
 <meta itemprop="description" content="This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&rsquo;s new UI (which is pretty cool) was merged into the dev branch (it&rsquo;s not fully functional yet, but it&rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the stable-demo branch.
 Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019">
-
-
-<meta itemprop="datePublished" content="2019-07-01T00:32:36&#43;05:30" />
-<meta itemprop="dateModified" content="2019-07-01T00:32:36&#43;05:30" />
+<meta itemprop="datePublished" content="2019-07-01T00:32:36+05:30" />
+<meta itemprop="dateModified" content="2019-07-01T00:32:36+05:30" />
 <meta itemprop="wordCount" content="443">
 
 
@@ -23,7 +21,7 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019">
 <meta property="og:description" content="This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&rsquo;s new UI (which is pretty cool) was merged into the dev branch (it&rsquo;s not fully functional yet, but it&rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the stable-demo branch.
 Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://parthsharma2.github.io/posts/gsoc-week-five/" />
+<meta property="og:url" content="https://parthsharma.dev/posts/gsoc-week-five/" />
 <meta property="article:published_time" content="2019-07-01T00:32:36+05:30" />
 <meta property="article:modified_time" content="2019-07-01T00:32:36+05:30" />
 <meta name="twitter:card" content="summary"/>
@@ -39,7 +37,7 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019"/>
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>GSoC Week 5</title>
-	<link rel="stylesheet" href="https://parthsharma2.github.io/css/style.min.31706917653d2b9e8410abd431f30ec4359a88a94fc87a63654779d87329edec.css" integrity="sha256-MXBpF2U9K56EEKvUMfMOxDWaiKlPyHpjZUd52HMp7ew=">
+	<link rel="stylesheet" href="https://parthsharma.dev/css/style.min.31706917653d2b9e8410abd431f30ec4359a88a94fc87a63654779d87329edec.css" integrity="sha256-MXBpF2U9K56EEKvUMfMOxDWaiKlPyHpjZUd52HMp7ew=">
 	
 </head>
 
@@ -49,10 +47,10 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019"/>
 		<div class="hdr-wrapper section-inner">
 			<div class="hdr-left">
 				<div class="site-branding">
-					<a href="https://parthsharma2.github.io">Parth Sharma</a>
+					<a href="https://parthsharma.dev">Parth Sharma</a>
 				</div>
 				<nav class="site-nav hide-in-mobile">
-					<a href="https://parthsharma2.github.io/posts/">Posts</a>
+					<a href="https://parthsharma.dev/posts/">Posts</a>
 				</nav>
 			</div>
 			<div class="hdr-right hdr-icons">
@@ -62,7 +60,7 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019"/>
 	</header>
 	<div id="mobile-menu" class="animated fast">
 		<ul>
-			<li><a href="https://parthsharma2.github.io/posts/">Posts</a></li>
+			<li><a href="https://parthsharma.dev/posts/">Posts</a></li>
 		</ul>
 	</div>
 
@@ -74,71 +72,62 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019"/>
 				<h1>GSoC Week 5</h1>
 			</header>
 			<div class="content">
-				
-
-<p>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&rsquo;s new UI (which is pretty cool) was merged into the <code>dev</code> branch (it&rsquo;s not fully functional yet, but it&rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the <code>stable-demo</code> branch.</p>
-
+				<p>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&rsquo;s new UI (which is pretty cool) was merged into the <code>dev</code> branch (it&rsquo;s not fully functional yet, but it&rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the <code>stable-demo</code> branch.</p>
 <h2 id="meeting-summary">Meeting Summary<a href="#meeting-summary" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <p><strong>Date:</strong> Tuesday, 25th June 2019 &amp; Friday, 28th June 2019</p>
-
 <ul>
 <li>Start work on adding Pull Requests to Augur Unified Database.</li>
 <li>Update the local installation instructions for Augur.</li>
 <li>Get all the API &amp; unit tests completed.</li>
 <li>Update API documentation:
-
 <ul>
 <li>Move all GHTorrent API endpoints to Legacy.</li>
 <li>Remove the Facade API endpoints from the docs.</li>
 <li>Improve the Augur DB API documentation.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="work-done-this-week">Work Done This Week<a href="#work-done-this-week" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <ul>
 <li><strong>Metrics Implemented:</strong>
-
 <ul>
 <li><em>Issue Participants:</em> returns the number of people participating in issue discussion.</li>
 <li><em>Issue Throughput:</em> returns a ratio of number of issues closed to total issues.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Metrics Refactored:</strong>
-
 <ul>
 <li>Refactored certain time series metrics to include a &lsquo;date&rsquo; field (previously, some time series metrics returned date fields labelled as &lsquo;commit_date&rsquo;, &lsquo;issue_date&rsquo;, etc.).</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>API Documentation:</strong>
-
 <ul>
 <li>Moved all GHTorrent endpoints to the GHTorrent Legacy section.</li>
 <li>Moved all GitHub API endpoints to the GitHub API endpoint section.</li>
 <li>Removed all Facade endpoints from the documentation.</li>
 <li>Updated the Augur DB endpoint documentation:
-
 <ul>
 <li>Added a single line description of each implemented metric.</li>
 <li>Documented certain undocumented endpoints.</li>
 <li>Improved the parameter descriptions.</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><strong>Testing:</strong>
-
 <ul>
 <li>Updated the Augur DB based metric implementation unit tests &amp; the API endpoint tests.</li>
 <li>Added unit tests &amp; API endpoint tests for new metric implementations.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Misc:</strong>
-
 <ul>
 <li>Helped setting up the <code>stable-demo</code> branch.</li>
 <li>Getting all new metric implementations, documentation updates, etc. without the new UI to the <code>stable-demo</code> branch.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:<a href="#pull-requests" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/305">Metric implementations &amp; API docs update</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/309">stable-demo: added metrics &amp; api-docs from dev</a></li>
@@ -146,27 +135,21 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019"/>
 <li><a href="https://github.com/chaoss/augur/pull/312">stable demo: Added &amp; updated augur_db tests &amp; refactor metric implementations</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/313">dev: Added &amp; updated augur_db tests &amp; refactor metric implementations</a></li>
 </ul>
-
 <h2 id="work-in-progress">Work in Progress:<a href="#work-in-progress" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <ul>
 <li>Adding Pull Requests to the Augur Unified Database:
-
 <ul>
 <li>Defining tables.</li>
 <li>Creating a worker for fetching Pull Request data.</li>
-</ul></li>
+</ul>
+</li>
 <li>Installation Instructions for Augur [Almost ready]</li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered<a href="#challenges-encountered" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <ul>
 <li>Implementing the <em>issue throughput</em> metric was a bit of challenge. I wanted to calculate the issue throughput of different repositories in repo groups on the database side itself. This required messing around with sub queries &amp; grouping them together in SQL. After quite a bit of googling &amp; searching for answers on StackOverflow I was able to implement the <em>issue throughput</em> metric.</li>
 </ul>
-
 <h2 id="future-work">Future Work<a href="#future-work" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <ul>
 <li>Adding Pull Requests to the Augur Unified Database.</li>
 <li>Installation Instructions for Augur.</li>
@@ -177,17 +160,17 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019"/>
 			<hr class="post-end">
 			<footer class="post-info">
 				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://parthsharma2.github.io/tags/gsoc">gsoc</a></span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://parthsharma.dev/tags/gsoc">gsoc</a></span>
 				</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>443 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-07-01 00:32 &#43;0530</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://parthsharma2.github.io/posts/gsoc-week-six/">
+			<a class="next-post" href="https://parthsharma.dev/posts/gsoc-week-six/">
 				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>GSoC Week 6</span>
 			</a>
-			<a class="prev-post" href="https://parthsharma2.github.io/posts/gsoc-week-four/">
+			<a class="prev-post" href="https://parthsharma.dev/posts/gsoc-week-four/">
 				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>GSoC Week 4</span>
 			</a>
 		</div>
@@ -196,14 +179,14 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp; Friday, 28th June 2019"/>
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2019 <a href="https://parthsharma2.github.io">Parth Sharma</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>&copy; 2021 <a href="https://parthsharma.dev">Parth Sharma</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
 		<p>
-			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://parthsharma2.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://parthsharma.dev/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
 	</footer>
 
 
-	<script src="https://parthsharma2.github.io/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
+	<script src="https://parthsharma.dev/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {

@@ -1,74 +1,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Parth Sharma</title>
-		<link>https://parthsharma2.github.io/posts/</link>
+		<link>https://parthsharma.dev/posts/</link>
 		<description>Recent content in Posts on Parth Sharma</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
 		<lastBuildDate>Mon, 05 Aug 2019 23:08:23 +0530</lastBuildDate>
-		<atom:link href="https://parthsharma2.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="https://parthsharma.dev/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
 			<title>GSoC Week 10</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-ten/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-ten/</link>
 			<pubDate>Mon, 05 Aug 2019 23:08:23 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-ten/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-ten/</guid>
 			<description>This week, I spent most of my time debugging the Pull Request worker.
 Meeting Summary Date: NA
 No meeting was held this week.
-Work Done This Week  GitHub Repository Metadata Worker:
+Work Done This Week   GitHub Repository Metadata Worker:
  Improved logging. The log file now includes the worker&amp;rsquo;s name and also logs exception tracebacks that help in debugging. Error Handling. The worker doesn&amp;rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</description>
-			<content type="html"><![CDATA[
-
-<p>This week, I spent most of my time debugging the Pull Request worker.</p>
-
+			<content type="html"><![CDATA[<p>This week, I spent most of my time debugging the Pull Request worker.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
 <p><strong>Date:</strong> NA</p>
-
 <p>No meeting was held this week.</p>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
-<li><p><strong>GitHub Repository Metadata Worker:</strong></p>
-
+<li>
+<p><strong>GitHub Repository Metadata Worker:</strong></p>
 <ul>
 <li>Improved logging. The log file now includes the worker&rsquo;s name and also logs exception tracebacks that help in debugging.</li>
 <li>Error Handling. The worker doesn&rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</li>
 <li>Added the ability to set the port the worker runs on by adding an entry for it <code>augur.config.json</code></li>
-</ul></li>
-
-<li><p><strong>GitHub Pull Requests Worker:</strong></p>
-
+</ul>
+</li>
+<li>
+<p><strong>GitHub Pull Requests Worker:</strong></p>
 <ul>
 <li>Fixed a bug that caused the worker to raise an error when a PR with a milestone was encountered.</li>
 <li>Fixed a bug that caused a Unique Key Violation in the DB when inserting Pull Request comments.</li>
 <li>Improved logging. The log file now includes the worker&rsquo;s name and also logs exception tracebacks that help in debugging.</li>
 <li>Error Handling. The worker doesn&rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</li>
 <li>Added the ability to set the port the worker runs on by adding an entry for it <code>augur.config.json</code></li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/337">Fixes &amp; minor changes to Repo Info Worker &amp; PR Worker</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/339">Bug fixes PR worker</a></li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <p>Fixing the bug that caused a &lsquo;Unique Key Violation&rsquo; in the DB when inserting Pull Request comments was the most challenging task. I spent hours going through the PR worker&rsquo;s code and testing it on various repositories just to realize that the error wasn&rsquo;t in the code but the database.</p>
-
 <p>The previous version of the PR worker used to manually set the primary key of each record inserted in the DB. This messed up the DB&rsquo;s primary key counter. The latest version of the PR worker relies on the DB to autoincrement the primary key each time a new record is inserted. So, each time the PR worker tries to insert a comment, the autoincremented primary key already exists in the DB thus resulting in a &lsquo;Unique Key Violation&rsquo; error.</p>
-
 <p>The fix was pretty simple. All we needed to do was to set the DB&rsquo;s primary key counter for the comments table to the max primary key in the comments table.</p>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Continue working on the Pull Request Worker.</li>
 <li>Implement Pull Request related metrics.</li>
@@ -78,41 +64,34 @@ Work Done This Week  GitHub Repository Metadata Worker:
 		
 		<item>
 			<title>GSoC Week 9</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-nine/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-nine/</link>
 			<pubDate>Mon, 29 Jul 2019 09:50:05 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-nine/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-nine/</guid>
 			<description>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker
 Meeting Summary Date: Monday, 22nd July 2019
  @sgoggins cleared a few doubts I had regarding the Pull Request Worker Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on repo-groups/ creates a Repo-Group &amp;amp; a POST request on repos/ adds a repository and begins the data collection process.</description>
-			<content type="html"><![CDATA[
-
-<p>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker</p>
-
+			<content type="html"><![CDATA[<p>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
 <p><strong>Date:</strong> Monday, 22nd July 2019</p>
-
 <ul>
 <li><a href="https://github.com/sgoggins">@sgoggins</a> cleared a few doubts I had regarding the Pull Request Worker</li>
 <li>Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on <code>repo-groups/</code> creates a Repo-Group &amp; a POST request on <code>repos/</code> adds a repository and begins the data collection process.</li>
 </ul>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
-<li><p><strong>Metrics Implemented:</strong></p>
-
+<li>
+<p><strong>Metrics Implemented:</strong></p>
 <ul>
 <li><em>Reviews:</em> Time series of the number of new reviews or pull requests opened within a certain period.</li>
 <li><em>Reviews Accepted:</em> Time series of the number of accepted reviews or pull requests merged within a certain period.</li>
 <li><em>Reviews Declined:</em> Time series of the number of declined reviews or pull requests closed within a certain period.</li>
 <li><em>Review Duration:</em> Time since a Review or Pull Request is proposed until it is accepted.</li>
-</ul></li>
-
-<li><p><strong>GitHub Pull Requests Worker:</strong> <br />
+</ul>
+</li>
+<li>
+<p><strong>GitHub Pull Requests Worker:</strong><br>
 The Pull Request Worker now also gathers the following pull request data:</p>
-
 <ul>
 <li>Labels</li>
 <li>Events</li>
@@ -120,25 +99,20 @@ The Pull Request Worker now also gathers the following pull request data:</p>
 <li>Assignees</li>
 <li>Comments</li>
 <li>PR Metadata (such as Head &amp; Base details)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/333">Update PR worker</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/334">PR metric implementations &amp; PR worker bug fixes</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/336">Update Pull Request Worker</a></li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <ul>
 <li>The main challenge for this week was debugging the Pull Request Worker. It required quite a bit of testing. The debugging process isn&rsquo;t over yet. I plan to continue debugging the worker while working on implementing pull request related metrics.</li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Continue working on the Pull Request Worker.</li>
 <li>Implement Pull Request related metrics</li>
@@ -149,71 +123,59 @@ The Pull Request Worker now also gathers the following pull request data:</p>
 		
 		<item>
 			<title>GSoC Week 8</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-eight/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-eight/</link>
 			<pubDate>Mon, 22 Jul 2019 09:16:34 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-eight/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-eight/</guid>
 			<description>This week I mostly worked on Workers and also implemented some metrics.
 Meeting Summary Date: NA
 No meeting was held this week.
-Work Done This Week  Metrics Implemented:
- Average Issue Resolution Time: returns the average time taken to resolve an issue (i.e. close an issue) Top Committers: returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this issue)  GitHub Repository Metadata Worker:</description>
-			<content type="html"><![CDATA[
-
-<p>This week I mostly worked on Workers and also implemented some metrics.</p>
-
+Work Done This Week   Metrics Implemented:
+ Average Issue Resolution Time: returns the average time taken to resolve an issue (i.e. close an issue) Top Committers: returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this issue)    GitHub Repository Metadata Worker:</description>
+			<content type="html"><![CDATA[<p>This week I mostly worked on Workers and also implemented some metrics.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
 <p><strong>Date:</strong> NA</p>
-
 <p>No meeting was held this week.</p>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
-<li><p><strong>Metrics Implemented:</strong></p>
-
+<li>
+<p><strong>Metrics Implemented:</strong></p>
 <ul>
 <li><em>Average Issue Resolution Time:</em> returns the average time taken to resolve an issue (i.e. close an issue)</li>
 <li><em>Top Committers:</em> returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this <a href="https://github.com/chaoss/augur/issues/327">issue</a>)</li>
-</ul></li>
-
-<li><p><strong>GitHub Repository Metadata Worker:</strong></p>
-
+</ul>
+</li>
+<li>
+<p><strong>GitHub Repository Metadata Worker:</strong></p>
 <ul>
 <li>Added a <code>setup.py</code> that simplifies installing and running the worker.</li>
-</ul></li>
-
-<li><p><strong>GitHub Pull Requests Worker:</strong></p>
-
+</ul>
+</li>
+<li>
+<p><strong>GitHub Pull Requests Worker:</strong></p>
 <ul>
 <li>Developed the first version of the GitHub Pull Request worker.</li>
 <li>This version of the worker fetches pull request data from the GitHub API and populates the <code>pull_requests</code> table.</li>
-</ul></li>
-
-<li><p><strong>API Docs:</strong></p>
-
+</ul>
+</li>
+<li>
+<p><strong>API Docs:</strong></p>
 <ul>
 <li>Moved all legacy API endpoint documentation to the bottom.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/326">Add setup.py to gh_repo_info_worker &amp; API Docs update</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/328">Add Pull Request Worker</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/330">Implement Metrics</a></li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <ul>
 <li>There weren&rsquo;t many challenges this week. But as I continue working on the Pull Request worker, I&rsquo;m pretty sure that I&rsquo;ll soon encounter some challenges.</li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Continue working on the Pull Request Worker.</li>
 <li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 22nd July 2019</strong>.</li>
@@ -223,52 +185,39 @@ Work Done This Week  Metrics Implemented:
 		
 		<item>
 			<title>GSoC Week 7</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-seven/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-seven/</link>
 			<pubDate>Sun, 14 Jul 2019 22:59:38 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-seven/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-seven/</guid>
 			<description>This week, I spent most of the time studying Augur&amp;rsquo;s worker architecture (broker &amp;amp; housekeeper) and refactoring the github repository metadata worker to integrate into Augur&amp;rsquo;s architecture.
 Meeting Summary Date: NA
 No meeting was held this week.
 Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker.</description>
-			<content type="html"><![CDATA[
-
-<p>This week, I spent most of the time studying Augur&rsquo;s worker architecture (broker &amp; housekeeper)
+			<content type="html"><![CDATA[<p>This week, I spent most of the time studying Augur&rsquo;s worker architecture (broker &amp; housekeeper)
 and refactoring the github repository metadata worker to integrate into Augur&rsquo;s architecture.</p>
-
 <h2 id="meeting-summary">Meeting Summary</h2>
-
 <p><strong>Date:</strong> NA</p>
-
 <p>No meeting was held this week.</p>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
 <li><strong>GitHub Repository Metadata Worker:</strong>
-
 <ul>
 <li>Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker.</li>
 <li>Refactored the worker to work on scheduled tasks, i.e. allow housekeeper to schedule tasks for this worker. This allow you to schedule the worker to run periodically.</li>
 <li>The worker is now fully functional and ready to be used.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/323">Make gh_repo_info_worker compatible with broker</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/324">Fix gh_repo_info_worker</a></li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <ul>
 <li>As you can see not a lot work was done this week as most of the time was spent studying how worker&rsquo;s work in Augur. I spent quite a bit of time understanding the Broker and Housekeeper, how tasks are scheduled and how workers accept tasks from the Broker and process them.</li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Begin work on the Pull Request Worker.</li>
 <li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 15th July 2019</strong>.</li>
@@ -278,30 +227,23 @@ and refactoring the github repository metadata worker to integrate into Augur&rs
 		
 		<item>
 			<title>GSoC Week 6</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-six/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-six/</link>
 			<pubDate>Sun, 07 Jul 2019 19:41:46 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-six/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-six/</guid>
 			<description>This week, I created a worker that fetches a repository&amp;rsquo;s information (forks, stargazers, watchers, etc.) and implemented a few metrics based on the repository&amp;rsquo;s information.
 Meeting Summary Date: NA
 No meeting was held this week.
-Work Done This Week  Metrics Implemented:
+Work Done This Week   Metrics Implemented:
  Forks: Returns a time series of fork count. Fork Count: Returns the latest fork count. Stars: Returns a time series of stargazers count. Stars Count: Returns the latest stargazers count.</description>
-			<content type="html"><![CDATA[
-
-<p>This week, I created a worker that fetches a repository&rsquo;s information (forks, stargazers, watchers, etc.) and implemented a few metrics based on the repository&rsquo;s information.</p>
-
+			<content type="html"><![CDATA[<p>This week, I created a worker that fetches a repository&rsquo;s information (forks, stargazers, watchers, etc.) and implemented a few metrics based on the repository&rsquo;s information.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
 <p><strong>Date:</strong> NA</p>
-
 <p>No meeting was held this week.</p>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
-<li><p><strong>Metrics Implemented:</strong></p>
-
+<li>
+<p><strong>Metrics Implemented:</strong></p>
 <ul>
 <li><em>Forks:</em> Returns a time series of fork count.</li>
 <li><em>Fork Count:</em> Returns the latest fork count.</li>
@@ -309,52 +251,45 @@ Work Done This Week  Metrics Implemented:
 <li><em>Stars Count:</em> Returns the latest stargazers count.</li>
 <li><em>Watchers:</em> Returns a time series of watchers count.</li>
 <li><em>Watchers Count:</em> Returns the latest watchers count.</li>
-</ul></li>
-
-<li><p><strong>Metrics Refactored:</strong></p>
-
+</ul>
+</li>
+<li>
+<p><strong>Metrics Refactored:</strong></p>
 <ul>
 <li>Along with <a href="https://github.com/gabe-heim">@gabe-heim</a> &amp; <a href="https://github.com/bing0n3">@bing0n3</a> refactored all metric API endpoints to include a <code>repo-name</code> field.</li>
-</ul></li>
-
-<li><p><strong>API Endpoints Added:</strong>
+</ul>
+</li>
+<li>
+<p><strong>API Endpoints Added:</strong>
 Added the following two utility API endpoints:</p>
-
 <ul>
 <li><code>/dosocs/repos</code>: Get a list of repos along with their <code>repo_id</code> &amp; <code>path</code>. Created to allow dosocs to get the path of the various repositories in Augur &amp; analyze them.</li>
 <li><code>/repo-groups/:repo_group_id/repos</code>: Get a list of all repos in a repo group specified by <code>repo_group_id</code>.</li>
-</ul></li>
-
-<li><p><strong>GitHub Repo Info Worker:</strong></p>
-
+</ul>
+</li>
+<li>
+<p><strong>GitHub Repo Info Worker:</strong></p>
 <ul>
 <li>Created a worker that fetches repo info (forks, stars, watchers, license, etc) for all repositories stored in the Augur.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/314">Add utility api endpoints</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/315">refactor metric implementations to include repo_name</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/316">Add GitHub Repo Info Worker</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/320">Bug fixes in Repo Info Worker &amp; Metric implementations</a></li>
 </ul>
-
 <h2 id="work-in-progress">Work in Progress:</h2>
-
 <ul>
 <li>Integrating the GitHub Repo Info Worker into Augur&rsquo;s worker architecture.</li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <ul>
 <li>Understanding how the worker works in Augur&rsquo;s architecture was a bit of challenge this week. The current challenge is integrating this worker into Augur.</li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Integrate the GitHub Repo Info Worker into Augur</li>
 <li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 8th July 2019</strong>.</li>
@@ -364,77 +299,68 @@ Added the following two utility API endpoints:</p>
 		
 		<item>
 			<title>GSoC Week 5</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-five/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-five/</link>
 			<pubDate>Mon, 01 Jul 2019 00:32:36 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-five/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-five/</guid>
 			<description>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&amp;rsquo;s new UI (which is pretty cool) was merged into the dev branch (it&amp;rsquo;s not fully functional yet, but it&amp;rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the stable-demo branch.
 Meeting Summary Date: Tuesday, 25th June 2019 &amp;amp; Friday, 28th June 2019</description>
-			<content type="html"><![CDATA[
-
-<p>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&rsquo;s new UI (which is pretty cool) was merged into the <code>dev</code> branch (it&rsquo;s not fully functional yet, but it&rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the <code>stable-demo</code> branch.</p>
-
+			<content type="html"><![CDATA[<p>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&rsquo;s new UI (which is pretty cool) was merged into the <code>dev</code> branch (it&rsquo;s not fully functional yet, but it&rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the <code>stable-demo</code> branch.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
 <p><strong>Date:</strong> Tuesday, 25th June 2019 &amp; Friday, 28th June 2019</p>
-
 <ul>
 <li>Start work on adding Pull Requests to Augur Unified Database.</li>
 <li>Update the local installation instructions for Augur.</li>
 <li>Get all the API &amp; unit tests completed.</li>
 <li>Update API documentation:
-
 <ul>
 <li>Move all GHTorrent API endpoints to Legacy.</li>
 <li>Remove the Facade API endpoints from the docs.</li>
 <li>Improve the Augur DB API documentation.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
 <li><strong>Metrics Implemented:</strong>
-
 <ul>
 <li><em>Issue Participants:</em> returns the number of people participating in issue discussion.</li>
 <li><em>Issue Throughput:</em> returns a ratio of number of issues closed to total issues.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Metrics Refactored:</strong>
-
 <ul>
 <li>Refactored certain time series metrics to include a &lsquo;date&rsquo; field (previously, some time series metrics returned date fields labelled as &lsquo;commit_date&rsquo;, &lsquo;issue_date&rsquo;, etc.).</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>API Documentation:</strong>
-
 <ul>
 <li>Moved all GHTorrent endpoints to the GHTorrent Legacy section.</li>
 <li>Moved all GitHub API endpoints to the GitHub API endpoint section.</li>
 <li>Removed all Facade endpoints from the documentation.</li>
 <li>Updated the Augur DB endpoint documentation:
-
 <ul>
 <li>Added a single line description of each implemented metric.</li>
 <li>Documented certain undocumented endpoints.</li>
 <li>Improved the parameter descriptions.</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><strong>Testing:</strong>
-
 <ul>
 <li>Updated the Augur DB based metric implementation unit tests &amp; the API endpoint tests.</li>
 <li>Added unit tests &amp; API endpoint tests for new metric implementations.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Misc:</strong>
-
 <ul>
 <li>Helped setting up the <code>stable-demo</code> branch.</li>
 <li>Getting all new metric implementations, documentation updates, etc. without the new UI to the <code>stable-demo</code> branch.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/305">Metric implementations &amp; API docs update</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/309">stable-demo: added metrics &amp; api-docs from dev</a></li>
@@ -442,27 +368,21 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp;amp; Friday, 28th June 2019</
 <li><a href="https://github.com/chaoss/augur/pull/312">stable demo: Added &amp; updated augur_db tests &amp; refactor metric implementations</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/313">dev: Added &amp; updated augur_db tests &amp; refactor metric implementations</a></li>
 </ul>
-
 <h2 id="work-in-progress">Work in Progress:</h2>
-
 <ul>
 <li>Adding Pull Requests to the Augur Unified Database:
-
 <ul>
 <li>Defining tables.</li>
 <li>Creating a worker for fetching Pull Request data.</li>
-</ul></li>
+</ul>
+</li>
 <li>Installation Instructions for Augur [Almost ready]</li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <ul>
 <li>Implementing the <em>issue throughput</em> metric was a bit of challenge. I wanted to calculate the issue throughput of different repositories in repo groups on the database side itself. This required messing around with sub queries &amp; grouping them together in SQL. After quite a bit of googling &amp; searching for answers on StackOverflow I was able to implement the <em>issue throughput</em> metric.</li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Adding Pull Requests to the Augur Unified Database.</li>
 <li>Installation Instructions for Augur.</li>
@@ -473,57 +393,43 @@ Meeting Summary Date: Tuesday, 25th June 2019 &amp;amp; Friday, 28th June 2019</
 		
 		<item>
 			<title>GSoC Week 4</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-four/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-four/</link>
 			<pubDate>Sun, 23 Jun 2019 23:39:49 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-four/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-four/</guid>
 			<description>This week I implemented evolution &amp;amp; risk metrics.
 Meeting Summary Date: NA
 No meeting was held this week.
 Work Done This Week The following metrics were implemented:
- Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.  Risk  CII Best Practices Badge: returns the CII Best Practices Badge level.</description>
-			<content type="html"><![CDATA[
-
-<p>This week I implemented evolution &amp; risk metrics.</p>
-
+ Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.   Risk  CII Best Practices Badge: returns the CII Best Practices Badge level.</description>
+			<content type="html"><![CDATA[<p>This week I implemented evolution &amp; risk metrics.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
 <p><strong>Date:</strong> NA</p>
-
 <p>No meeting was held this week.</p>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <p>The following metrics were implemented:</p>
-
 <ul>
 <li><strong>Evolution</strong>
-
 <ul>
 <li><em>Issue Duration:</em> returns the duration of all closed issues.</li>
 <li><em>Issues Active:</em> returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Risk</strong>
-
 <ul>
 <li><em>CII Best Practices Badge:</em> returns the CII Best Practices Badge level.</li>
 <li><em>Languages:</em> returns the primary language of the repository. In this implementation, the primary language is fetched from the GitHub API.</li>
 <li><em>License Declared:</em> returns the declared license of the repository. In this implementation, the licenses are fetched from the badging data (CII Best Practices badge)</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/300">Implement Evolution &amp; Risk Metrics</a></li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <p>There weren&rsquo;t many challenges this week. It mostly involved exploring the Unified Augur Database &amp; figuring out all the possible ways of implementing the various metrics.</p>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Focus on implementing issue related metrics.</li>
 <li>Look at creating visualizations for the implemented metrics.</li>
@@ -534,50 +440,38 @@ Work Done This Week The following metrics were implemented:
 		
 		<item>
 			<title>GSoC Week 3</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-three/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-three/</link>
 			<pubDate>Sun, 16 Jun 2019 23:05:31 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-three/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-three/</guid>
 			<description>This week involved quite a bit of writing unit tests &amp;amp; documentation. It also involved reading and understanding a lot of Javascript for a better understanding of Augur&amp;rsquo;s frontend.
-Meeting Summary Date: Monday, 10th June 2019  Develop unit tests for metric implementations &amp;amp; API endpoints. Write documentation for &amp;lsquo;Create a metric&amp;rsquo;. Start looking at developing the frontend for the metric implementations. Make changes to the frontend to be able to work with Augur&amp;rsquo;s new architecture &amp;amp; API endpoint scheme.</description>
-			<content type="html"><![CDATA[
-
-<p>This week involved quite a bit of writing unit tests &amp; documentation. It also involved reading and understanding a lot of Javascript for a better understanding of Augur&rsquo;s frontend.</p>
-
+Meeting Summary Date: Monday, 10th June 2019 \
+ Develop unit tests for metric implementations &amp;amp; API endpoints. Write documentation for &amp;lsquo;Create a metric&amp;rsquo;. Start looking at developing the frontend for the metric implementations. Make changes to the frontend to be able to work with Augur&amp;rsquo;s new architecture &amp;amp; API endpoint scheme.</description>
+			<content type="html"><![CDATA[<p>This week involved quite a bit of writing unit tests &amp; documentation. It also involved reading and understanding a lot of Javascript for a better understanding of Augur&rsquo;s frontend.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
-<p><strong>Date:</strong> Monday, 10th June 2019 </p>
-
+<p><strong>Date:</strong> Monday, 10th June 2019 \</p>
 <ul>
 <li>Develop unit tests for metric implementations &amp; API endpoints.</li>
 <li>Write documentation for &lsquo;Create a metric&rsquo;.</li>
 <li>Start looking at developing the frontend for the metric implementations.</li>
 <li>Make changes to the frontend to be able to work with Augur&rsquo;s new architecture &amp; API endpoint scheme.</li>
 </ul>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
 <li>Developed unit tests for the various metric implementations.</li>
 <li>Developed unit tests for the API endpoints.</li>
 <li>Updated &lsquo;Create a Metric&rsquo; documentation by adding steps explaining how to implement a metric in the backend.</li>
 <li>Explored Augur&rsquo;s frontend architecture.</li>
 </ul>
-
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/296">chaoss/augur/pull/296</a></li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered</h2>
-
 <ul>
 <li>Exploring Augur&rsquo;s frontend was quite a challenge this week due to my lack of experience in Javascript &amp; Vue.js. With help from everyone working on Augur, I was able to get a nice high-level overview of how the frontend works. I&rsquo;m still working on getting a better understanding of Augur&rsquo;s frontend &amp; trying to get the metric implementations on to the frontend.</li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Get a better understanding of Augur&rsquo;s frontend.</li>
 <li>Start developing the frontend for the metric implementations.</li>
@@ -588,47 +482,36 @@ Meeting Summary Date: Monday, 10th June 2019  Develop unit tests for metric impl
 		
 		<item>
 			<title>GSoC Week 2</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-two/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-two/</link>
 			<pubDate>Sun, 09 Jun 2019 21:34:58 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-two/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-two/</guid>
 			<description>This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.
-Meeting Summary Date: Monday, 3rd June 2019 Summary:
+Meeting Summary Date: Monday, 3rd June 2019 \
+Summary:
  Refactor metric implementations to accept repo_group_id and repo_id instead of repo_url to adhere to the new API endpoint scheme. Add API endpoints for the metric implementations. Write documentation. Create unit tests for the metric implementations.</description>
-			<content type="html"><![CDATA[
-
-<p>This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.</p>
-
+			<content type="html"><![CDATA[<p>This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
-<p><strong>Date:</strong> Monday, 3rd June 2019 </p>
-
+<p><strong>Date:</strong> Monday, 3rd June 2019 \</p>
 <p><strong>Summary:</strong></p>
-
 <ul>
 <li>Refactor metric implementations to accept <code>repo_group_id</code> and <code>repo_id</code> instead of <code>repo_url</code> to adhere to the new API endpoint scheme.</li>
 <li>Add API endpoints for the metric implementations.</li>
 <li>Write documentation.</li>
 <li>Create unit tests for the metric implementations.</li>
 </ul>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <ul>
 <li>All metrics implemented last week were refactored to work on repo groups as well as repos. Which means now you can use a metric on a specific repository using the <code>/repo-groups/:repo_group_id/repos/:repo_id/[metric]</code> endpoint, or on a group of repositories in one go using <code>/repo-groups/:repo_group_id/[metric]</code> endpoint.</li>
 <li>Created API endpoints for the refactored metric implementations.</li>
 <li>Wrote <a href="https://github.com/chaoss/augur/pull/291/commits/94c99097e2b1e6ed2c8f51f981c7e236a5304d1e">helper functions</a> that simplify creating API endpoints [This was fun. Learnt quite a bit about routing in Flask and the Python Data Model 😄].</li>
 <li>Documented the new API endpoints.</li>
 </ul>
-
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/291">chaoss/augur/pull/291</a></li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Write unit tests.</li>
 <li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 10th June 2019</strong>.</li>
@@ -638,87 +521,75 @@ Meeting Summary Date: Monday, 3rd June 2019 Summary:
 		
 		<item>
 			<title>GSoC Week 1</title>
-			<link>https://parthsharma2.github.io/posts/gsoc-week-one/</link>
+			<link>https://parthsharma.dev/posts/gsoc-week-one/</link>
 			<pubDate>Sun, 02 Jun 2019 21:13:11 +0530</pubDate>
 			
-			<guid>https://parthsharma2.github.io/posts/gsoc-week-one/</guid>
+			<guid>https://parthsharma.dev/posts/gsoc-week-one/</guid>
 			<description>27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&amp;rsquo;ll try and summarize some of the key points discussed with my mentor regarding my GSoC Project, the work done this week, pending work, if any, and work planned for the future.
-Meeting Summary Date: Tuesday, 28th May 2019 Summary:
+Meeting Summary Date: Tuesday, 28th May 2019
+Summary:
  Discussed the new Augur schema and architecture.</description>
-			<content type="html"><![CDATA[
-
-<p>27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&rsquo;ll try and summarize some of the key points discussed with my mentor regarding my <a href="https://summerofcode.withgoogle.com/projects/#5226166565208064">GSoC Project</a>, the work done this week, pending work, if any, and work planned for the future.</p>
-
+			<content type="html"><![CDATA[<p>27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&rsquo;ll try and summarize some of the key points discussed with my mentor regarding my <a href="https://summerofcode.withgoogle.com/projects/#5226166565208064">GSoC Project</a>, the work done this week, pending work, if any, and work planned for the future.</p>
 <h2 id="meeting-summary">Meeting Summary</h2>
-
-<p><strong>Date:</strong> Tuesday, 28th May 2019 <br />
+<p><strong>Date:</strong> Tuesday, 28th May 2019<br>
 <strong>Summary:</strong></p>
-
 <ul>
 <li>Discussed the new Augur schema and architecture.
-
 <ul>
 <li>The new schema is almost ready.</li>
 <li>The Github API &amp; CII Badge Information workers are mostly ready and have begun gathering data.</li>
 <li>Augur will switch to a new API endpoint scheme.</li>
-</ul></li>
+</ul>
+</li>
 <li>New metric implementations to be based on the new augur schema.</li>
 <li>Old metric implementations to remain for backwards compatibility.</li>
 <li>Begin work by implementing Evolution metrics, specifically <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md">Code Development metrics</a>.</li>
 </ul>
-
 <h2 id="work-done-this-week">Work Done This Week</h2>
-
 <p>This week I got access to the new augur schema. <a href="https://github.com/bing0n3">@bing0n3</a> and I began by implementing <a href="https://github.com/chaoss/wg-evolution#metrics">Evolution Metrics</a>. I focussed on implementing <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/code_development.md">Code Development Metrics</a> while @bing0n3 focussed on <a href="https://github.com/chaoss/wg-evolution/blob/master/focus_areas/community_growth.md">Community Growth Metrics</a>.</p>
-
 <p><em>Metrics implemented:</em></p>
-
 <ul>
 <li><strong>Code Changes:</strong>
-
 <ul>
 <li>Returns a time series of code commits per period (i.e. day, week, month or year).</li>
 <li>Accepts a begin date and an end date.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Code Changes Lines:</strong>
-
 <ul>
 <li>Returns a time series of lines of code added and removed per period (i.e. day, week, month or year).</li>
 <li>Accepts a begin date and an end date.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Issues New:</strong>
-
 <ul>
 <li>Returns a time series of issues opened per period (i.e. day, week, month or year).</li>
 <li>Accepts a begin date and an end date.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Issues Closed:</strong>
-
 <ul>
 <li>Returns a time series of issues closed per period (i.e. day, week, month or year).</li>
 <li>Accepts a begin date and an end date.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Issue Backlog:</strong>
-
 <ul>
 <li>Returns number of issues currently open.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Issue Duration:</strong>
-
 <ul>
 <li>Returns the duration of each issue.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:</h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/284">chaoss/augur/pull/284</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/285">chaoss/augur/pull/285</a></li>
 </ul>
-
 <h2 id="future-work">Future Work</h2>
-
 <ul>
 <li>Continue implementing the remaining Evolution metrics.</li>
 <li>Get involved with <a href="https://github.com/chaoss/wg-risk">Risk Working Group</a> to understand Risk metrics.</li>

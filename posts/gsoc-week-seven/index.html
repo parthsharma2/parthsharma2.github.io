@@ -12,10 +12,8 @@
 Meeting Summary Date: NA
 No meeting was held this week.
 Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker.">
-
-
-<meta itemprop="datePublished" content="2019-07-14T22:59:38&#43;05:30" />
-<meta itemprop="dateModified" content="2019-07-14T22:59:38&#43;05:30" />
+<meta itemprop="datePublished" content="2019-07-14T22:59:38+05:30" />
+<meta itemprop="dateModified" content="2019-07-14T22:59:38+05:30" />
 <meta itemprop="wordCount" content="201">
 
 
@@ -27,7 +25,7 @@ Meeting Summary Date: NA
 No meeting was held this week.
 Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://parthsharma2.github.io/posts/gsoc-week-seven/" />
+<meta property="og:url" content="https://parthsharma.dev/posts/gsoc-week-seven/" />
 <meta property="article:published_time" content="2019-07-14T22:59:38+05:30" />
 <meta property="article:modified_time" content="2019-07-14T22:59:38+05:30" />
 <meta name="twitter:card" content="summary"/>
@@ -45,7 +43,7 @@ Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker t
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>GSoC Week 7</title>
-	<link rel="stylesheet" href="https://parthsharma2.github.io/css/style.min.31706917653d2b9e8410abd431f30ec4359a88a94fc87a63654779d87329edec.css" integrity="sha256-MXBpF2U9K56EEKvUMfMOxDWaiKlPyHpjZUd52HMp7ew=">
+	<link rel="stylesheet" href="https://parthsharma.dev/css/style.min.31706917653d2b9e8410abd431f30ec4359a88a94fc87a63654779d87329edec.css" integrity="sha256-MXBpF2U9K56EEKvUMfMOxDWaiKlPyHpjZUd52HMp7ew=">
 	
 </head>
 
@@ -55,10 +53,10 @@ Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker t
 		<div class="hdr-wrapper section-inner">
 			<div class="hdr-left">
 				<div class="site-branding">
-					<a href="https://parthsharma2.github.io">Parth Sharma</a>
+					<a href="https://parthsharma.dev">Parth Sharma</a>
 				</div>
 				<nav class="site-nav hide-in-mobile">
-					<a href="https://parthsharma2.github.io/posts/">Posts</a>
+					<a href="https://parthsharma.dev/posts/">Posts</a>
 				</nav>
 			</div>
 			<div class="hdr-right hdr-icons">
@@ -68,7 +66,7 @@ Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker t
 	</header>
 	<div id="mobile-menu" class="animated fast">
 		<ul>
-			<li><a href="https://parthsharma2.github.io/posts/">Posts</a></li>
+			<li><a href="https://parthsharma.dev/posts/">Posts</a></li>
 		</ul>
 	</div>
 
@@ -80,44 +78,31 @@ Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker t
 				<h1>GSoC Week 7</h1>
 			</header>
 			<div class="content">
-				
-
-<p>This week, I spent most of the time studying Augur&rsquo;s worker architecture (broker &amp; housekeeper)
+				<p>This week, I spent most of the time studying Augur&rsquo;s worker architecture (broker &amp; housekeeper)
 and refactoring the github repository metadata worker to integrate into Augur&rsquo;s architecture.</p>
-
 <h2 id="meeting-summary">Meeting Summary<a href="#meeting-summary" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <p><strong>Date:</strong> NA</p>
-
 <p>No meeting was held this week.</p>
-
 <h2 id="work-done-this-week">Work Done This Week<a href="#work-done-this-week" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <ul>
 <li><strong>GitHub Repository Metadata Worker:</strong>
-
 <ul>
 <li>Refactored the worker to work with the broker, i.e. allow the broker to send tasks to the worker. This allows you to manually send tasks to the worker.</li>
 <li>Refactored the worker to work on scheduled tasks, i.e. allow housekeeper to schedule tasks for this worker. This allow you to schedule the worker to run periodically.</li>
 <li>The worker is now fully functional and ready to be used.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="pull-requests">Pull Requests:<a href="#pull-requests" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-
 <ul>
 <li><a href="https://github.com/chaoss/augur/pull/323">Make gh_repo_info_worker compatible with broker</a></li>
 <li><a href="https://github.com/chaoss/augur/pull/324">Fix gh_repo_info_worker</a></li>
 </ul>
-
 <h2 id="challenges-encountered">Challenges Encountered<a href="#challenges-encountered" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <ul>
 <li>As you can see not a lot work was done this week as most of the time was spent studying how worker&rsquo;s work in Augur. I spent quite a bit of time understanding the Broker and Housekeeper, how tasks are scheduled and how workers accept tasks from the Broker and process them.</li>
 </ul>
-
 <h2 id="future-work">Future Work<a href="#future-work" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
-
 <ul>
 <li>Begin work on the Pull Request Worker.</li>
 <li>More future plans for next week to be decided in the <em>next meeting</em> on <strong>Monday, 15th July 2019</strong>.</li>
@@ -127,17 +112,17 @@ and refactoring the github repository metadata worker to integrate into Augur&rs
 			<hr class="post-end">
 			<footer class="post-info">
 				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://parthsharma2.github.io/tags/gsoc">gsoc</a></span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://parthsharma.dev/tags/gsoc">gsoc</a></span>
 				</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>201 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-07-14 22:59 &#43;0530</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://parthsharma2.github.io/posts/gsoc-week-eight/">
+			<a class="next-post" href="https://parthsharma.dev/posts/gsoc-week-eight/">
 				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>GSoC Week 8</span>
 			</a>
-			<a class="prev-post" href="https://parthsharma2.github.io/posts/gsoc-week-six/">
+			<a class="prev-post" href="https://parthsharma.dev/posts/gsoc-week-six/">
 				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>GSoC Week 6</span>
 			</a>
 		</div>
@@ -146,14 +131,14 @@ and refactoring the github repository metadata worker to integrate into Augur&rs
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2019 <a href="https://parthsharma2.github.io">Parth Sharma</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>&copy; 2021 <a href="https://parthsharma.dev">Parth Sharma</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
 		<p>
-			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://parthsharma2.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://parthsharma.dev/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
 	</footer>
 
 
-	<script src="https://parthsharma2.github.io/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
+	<script src="https://parthsharma.dev/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {

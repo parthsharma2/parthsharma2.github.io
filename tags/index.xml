@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Parth Sharma</title>
-    <link>https://parthsharma2.github.io/tags/</link>
+    <link>https://parthsharma.dev/tags/</link>
     <description>Recent content in Tags on Parth Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 05 Aug 2019 23:08:23 +0530</lastBuildDate>
-    
-	<atom:link href="https://parthsharma2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 05 Aug 2019 23:08:23 +0530</lastBuildDate><atom:link href="https://parthsharma.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>gsoc</title>
-      <link>https://parthsharma2.github.io/tags/gsoc/</link>
+      <link>https://parthsharma.dev/tags/gsoc/</link>
       <pubDate>Mon, 05 Aug 2019 23:08:23 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/tags/gsoc/</guid>
+      <guid>https://parthsharma.dev/tags/gsoc/</guid>
       <description></description>
     </item>
     

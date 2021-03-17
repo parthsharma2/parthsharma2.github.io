@@ -1,36 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Parth Sharma</title>
-    <link>https://parthsharma2.github.io/</link>
+    <link>https://parthsharma.dev/</link>
     <description>Recent content on Parth Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 05 Aug 2019 23:08:23 +0530</lastBuildDate>
-    
-	<atom:link href="https://parthsharma2.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 05 Aug 2019 23:08:23 +0530</lastBuildDate><atom:link href="https://parthsharma.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GSoC Week 10</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-ten/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-ten/</link>
       <pubDate>Mon, 05 Aug 2019 23:08:23 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-ten/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-ten/</guid>
       <description>This week, I spent most of my time debugging the Pull Request worker.
 Meeting Summary Date: NA
 No meeting was held this week.
-Work Done This Week  GitHub Repository Metadata Worker:
+Work Done This Week   GitHub Repository Metadata Worker:
  Improved logging. The log file now includes the worker&amp;rsquo;s name and also logs exception tracebacks that help in debugging. Error Handling. The worker doesn&amp;rsquo;t quit when it encounters an error while performing a task. It logs the error and moves onto the next task.</description>
     </item>
     
     <item>
       <title>GSoC Week 9</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-nine/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-nine/</link>
       <pubDate>Mon, 29 Jul 2019 09:50:05 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-nine/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-nine/</guid>
       <description>This week officialy marked the end of the second coding phase. Most of my work this week involved working on the Pull Request Worker
 Meeting Summary Date: Monday, 22nd July 2019
  @sgoggins cleared a few doubts I had regarding the Pull Request Worker Discussed creating new API endpoints that allow a user to add Repo-Groups and Repos to Augur. For example a POST request on repo-groups/ creates a Repo-Group &amp;amp; a POST request on repos/ adds a repository and begins the data collection process.</description>
@@ -38,23 +34,23 @@ Meeting Summary Date: Monday, 22nd July 2019
     
     <item>
       <title>GSoC Week 8</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-eight/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-eight/</link>
       <pubDate>Mon, 22 Jul 2019 09:16:34 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-eight/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-eight/</guid>
       <description>This week I mostly worked on Workers and also implemented some metrics.
 Meeting Summary Date: NA
 No meeting was held this week.
-Work Done This Week  Metrics Implemented:
- Average Issue Resolution Time: returns the average time taken to resolve an issue (i.e. close an issue) Top Committers: returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this issue)  GitHub Repository Metadata Worker:</description>
+Work Done This Week   Metrics Implemented:
+ Average Issue Resolution Time: returns the average time taken to resolve an issue (i.e. close an issue) Top Committers: returns a list of contributors contributing N% of all commits in a repo_group or repo. (Refer this issue)    GitHub Repository Metadata Worker:</description>
     </item>
     
     <item>
       <title>GSoC Week 7</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-seven/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-seven/</link>
       <pubDate>Sun, 14 Jul 2019 22:59:38 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-seven/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-seven/</guid>
       <description>This week, I spent most of the time studying Augur&amp;rsquo;s worker architecture (broker &amp;amp; housekeeper) and refactoring the github repository metadata worker to integrate into Augur&amp;rsquo;s architecture.
 Meeting Summary Date: NA
 No meeting was held this week.
@@ -63,69 +59,72 @@ Work Done This Week  GitHub Repository Metadata Worker:  Refactored the worker t
     
     <item>
       <title>GSoC Week 6</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-six/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-six/</link>
       <pubDate>Sun, 07 Jul 2019 19:41:46 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-six/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-six/</guid>
       <description>This week, I created a worker that fetches a repository&amp;rsquo;s information (forks, stargazers, watchers, etc.) and implemented a few metrics based on the repository&amp;rsquo;s information.
 Meeting Summary Date: NA
 No meeting was held this week.
-Work Done This Week  Metrics Implemented:
+Work Done This Week   Metrics Implemented:
  Forks: Returns a time series of fork count. Fork Count: Returns the latest fork count. Stars: Returns a time series of stargazers count. Stars Count: Returns the latest stargazers count.</description>
     </item>
     
     <item>
       <title>GSoC Week 5</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-five/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-five/</link>
       <pubDate>Mon, 01 Jul 2019 00:32:36 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-five/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-five/</guid>
       <description>This week officially marked the end of Coding Phase 1 and the first evaluation period (which I succesfully passed 🎉). Also, Augur&amp;rsquo;s new UI (which is pretty cool) was merged into the dev branch (it&amp;rsquo;s not fully functional yet, but it&amp;rsquo;s a big moment for Augur). The old stable version of Augur can be currently found in the stable-demo branch.
 Meeting Summary Date: Tuesday, 25th June 2019 &amp;amp; Friday, 28th June 2019</description>
     </item>
     
     <item>
       <title>GSoC Week 4</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-four/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-four/</link>
       <pubDate>Sun, 23 Jun 2019 23:39:49 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-four/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-four/</guid>
       <description>This week I implemented evolution &amp;amp; risk metrics.
 Meeting Summary Date: NA
 No meeting was held this week.
 Work Done This Week The following metrics were implemented:
- Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.  Risk  CII Best Practices Badge: returns the CII Best Practices Badge level.</description>
+ Evolution  Issue Duration: returns the duration of all closed issues. Issues Active: returns a timeseries of the number of issues active per period(day, week, month, year). In this implementation, an issue is considered active if a GitHub issue event occurs.   Risk  CII Best Practices Badge: returns the CII Best Practices Badge level.</description>
     </item>
     
     <item>
       <title>GSoC Week 3</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-three/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-three/</link>
       <pubDate>Sun, 16 Jun 2019 23:05:31 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-three/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-three/</guid>
       <description>This week involved quite a bit of writing unit tests &amp;amp; documentation. It also involved reading and understanding a lot of Javascript for a better understanding of Augur&amp;rsquo;s frontend.
-Meeting Summary Date: Monday, 10th June 2019  Develop unit tests for metric implementations &amp;amp; API endpoints. Write documentation for &amp;lsquo;Create a metric&amp;rsquo;. Start looking at developing the frontend for the metric implementations. Make changes to the frontend to be able to work with Augur&amp;rsquo;s new architecture &amp;amp; API endpoint scheme.</description>
+Meeting Summary Date: Monday, 10th June 2019 \
+ Develop unit tests for metric implementations &amp;amp; API endpoints. Write documentation for &amp;lsquo;Create a metric&amp;rsquo;. Start looking at developing the frontend for the metric implementations. Make changes to the frontend to be able to work with Augur&amp;rsquo;s new architecture &amp;amp; API endpoint scheme.</description>
     </item>
     
     <item>
       <title>GSoC Week 2</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-two/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-two/</link>
       <pubDate>Sun, 09 Jun 2019 21:34:58 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-two/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-two/</guid>
       <description>This week involved quite a bit of refactoring and getting the refactored metric implementation functions linked to API endpoints. Also, I got to play around with python functions.
-Meeting Summary Date: Monday, 3rd June 2019 Summary:
+Meeting Summary Date: Monday, 3rd June 2019 \
+Summary:
  Refactor metric implementations to accept repo_group_id and repo_id instead of repo_url to adhere to the new API endpoint scheme. Add API endpoints for the metric implementations. Write documentation. Create unit tests for the metric implementations.</description>
     </item>
     
     <item>
       <title>GSoC Week 1</title>
-      <link>https://parthsharma2.github.io/posts/gsoc-week-one/</link>
+      <link>https://parthsharma.dev/posts/gsoc-week-one/</link>
       <pubDate>Sun, 02 Jun 2019 21:13:11 +0530</pubDate>
       
-      <guid>https://parthsharma2.github.io/posts/gsoc-week-one/</guid>
+      <guid>https://parthsharma.dev/posts/gsoc-week-one/</guid>
       <description>27th May officialy marked the beginning of the coding period of Google Summer of Code. From now on expect a blog post every week in which I&amp;rsquo;ll try and summarize some of the key points discussed with my mentor regarding my GSoC Project, the work done this week, pending work, if any, and work planned for the future.
-Meeting Summary Date: Tuesday, 28th May 2019 Summary:
+Meeting Summary Date: Tuesday, 28th May 2019
+Summary:
  Discussed the new Augur schema and architecture.</description>
     </item>
     
